@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.8)  3 OCT 2017 15:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.8)  3 OCT 2017 22:36
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1164,7 +1164,11 @@ File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.0 (rcs-revision 1.2)
 s.code.tex
 File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.0 (rcs-revision 1.13)
 ))
-\c@theorem=\count280
+(/usr/local/texlive/2014/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2011/01/03 v2.1 e-TeX tools for LaTeX
+\etb@tempcnta=\count280
+)
+\c@theorem=\count281
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/todonotes/todonotes.sty
 Package: todonotes 2012/07/25 .dtx Todonotes source and documentation.
@@ -1174,62 +1178,63 @@ Package: todonotes 2012/07/25
 s/tikzlibrarypositioning.code.tex
 File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 )
-\c@@todonotes@numberoftodonotes=\count281
-) (./coordSections.aux)
+\c@@todonotes@numberoftodonotes=\count282
+) (./figures/accordionComplexTikz.tex)
+(./coordSections.aux)
 \openout1 = `coordSections.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 202.
-LaTeX Font Info:    ... okay on input line 202.
-LaTeX Font Info:    Try loading font information for U+msa on input line 202.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 209.
+LaTeX Font Info:    ... okay on input line 209.
+LaTeX Font Info:    Try loading font information for U+msa on input line 209.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 202.
+LaTeX Font Info:    Try loading font information for U+msb on input line 209.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 202.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 209.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 202.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 209.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for U+shuffle on input line 20
-2.
+9.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/shuffle/Ushuffle.fd
 File: Ushuffle.fd 
 )
 (/usr/local/texlive/2014/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count282
+\scratchcounter=\count283
 \scratchdimen=\dimen326
 \scratchbox=\box110
-\nofMPsegments=\count283
-\nofMParguments=\count284
+\nofMPsegments=\count284
+\nofMParguments=\count285
 \everyMPshowfont=\toks52
-\MPscratchCnt=\count285
+\MPscratchCnt=\count286
 \MPscratchDim=\dimen327
-\MPnumerator=\count286
-\makeMPintoPDFobject=\count287
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
 \everyMPtoPDFconversion=\toks53
 ) (/usr/local/texlive/2014/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -1247,7 +1252,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box111
-Package hyperref Info: Link coloring ON on input line 202.
+Package hyperref Info: Link coloring ON on input line 209.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1255,11 +1260,11 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2014/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count288
+\c@section@level=\count289
 )
-LaTeX Info: Redefining \ref on input line 202.
-LaTeX Info: Redefining \pageref on input line 202.
-LaTeX Info: Redefining \nameref on input line 202.
+LaTeX Info: Redefining \ref on input line 209.
+LaTeX Info: Redefining \pageref on input line 209.
+LaTeX Info: Redefining \nameref on input line 209.
 
 (./coordSections.out) (./coordSections.out)
 \@outlinefile=\write5
@@ -1269,27 +1274,45 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
-Package xypdf Info: Line width: 0.39998pt on input line 202.
+Package xypdf Info: Line width: 0.39998pt on input line 209.
 
 ABD: EveryShipout initializing macros
 
-LaTeX Warning: Reference `' on page 1 undefined on input line 225.
+LaTeX Warning: Citation `Chapoton' on page 1 undefined on input line 241.
 
-Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
-ine 250.
 
-LaTeX Warning: Reference `sec:PGP' on page 1 undefined on input line 256.
+LaTeX Warning: Citation `GarverMcConville' on page 1 undefined on input line 24
+1.
+
+
+LaTeX Warning: Citation `MannevillePilaud' on page 1 undefined on input line 24
+1.
+
+<figures/exmAccordionDissections.pdf, id=21, 378.5844pt x 105.81935pt>
+File: figures/exmAccordionDissections.pdf Graphic file (type pdf)
+
+<use figures/exmAccordionDissections.pdf>
+Package pdftex.def Info: figures/exmAccordionDissections.pdf used on input line
+ 245.
+(pdftex.def)             Requested size: 424.58624pt x 118.68315pt.
+
+
+LaTeX Warning: Citation `??' on page 1 undefined on input line 271.
+
+
+LaTeX Warning: Reference `sec:PGP' on page 1 undefined on input line 271.
 
 
 LaTeX Warning: Citation `PaluPilaudPlamondon' on page 1 undefined on input line
- 268.
+ 284.
 
 
 LaTeX Warning: Citation `MannevillePilaud-accordion' on page 1 undefined on inp
-ut line 276.
+ut line 292.
 
-
-Overfull \hbox (5.16396pt too wide) in paragraph at lines 279--280
+[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./fig
+ures/exmAccordionDissections.pdf>]
+Overfull \hbox (5.16396pt too wide) in paragraph at lines 295--296
 \T1/aer/m/it/10 mor-phic to the sub-com-plex of $[]\OT1/cmr/m/n/10 (D[])$ \T1/a
 er/m/it/10 in-duced by $\OT1/cmr/m/n/10 D[]$\T1/aer/m/it/10 -accordion di-ag-o-
 nals $\OML/cmm/m/it/10 ^^N[]$ \T1/aer/m/it/10 whose $\OT1/cmr/bx/n/10 g$\T1/aer
@@ -1297,38 +1320,93 @@ nals $\OML/cmm/m/it/10 ^^N[]$ \T1/aer/m/it/10 whose $\OT1/cmr/bx/n/10 g$\T1/aer
 L/cmm/m/it/10 ^^N[]\OT1/cmr/m/n/10 )$
  []
 
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 310.
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
 (./coordSections.bbl
 
 LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
 )
-LaTeX Font Info:    Try loading font information for T1+aett on input line 309.
+LaTeX Font Info:    Try loading font information for T1+aett on input line 341.
 
  (/usr/local/texlive/2014/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
+) [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 341.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 341.
 
 (./coordSections.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 341.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 341.
 Package rerunfilecheck Info: File `coordSections.out' has not changed.
-(rerunfilecheck)             Checksum: BD5DA2D7901AD7F00F14E9CE72C0C6E7;189.
+(rerunfilecheck)             Checksum: 3123E109A76382E3A022656C53C8AC6D;189.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 341.
  ) 
 Here is how much of TeX's memory you used:
- 30537 strings out of 493117
- 587054 string characters out of 6135433
- 721284 words of memory out of 5000000
- 33217 multiletter control sequences out of 15000+600000
+ 31167 strings out of 493117
+ 596368 string characters out of 6135433
+ 850507 words of memory out of 5000000
+ 33834 multiletter control sequences out of 15000+600000
  36936 words of font info for 99 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,9n,94p,10373b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,14n,94p,10373b,1267s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
 ></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
@@ -1345,10 +1423,10 @@ ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
 ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive
 /2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2
 014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on coordSections.pdf (2 pages, 163604 bytes).
+Output written on coordSections.pdf (3 pages, 177711 bytes).
 PDF statistics:
- 114 PDF objects out of 1000 (max. 8388607)
- 93 compressed objects within 1 object stream
- 12 named destinations out of 1000 (max. 500000)
- 37 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 134 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
+ 15 named destinations out of 1000 (max. 500000)
+ 42 words of extra memory for PDF output out of 10000 (max. 10000000)
 

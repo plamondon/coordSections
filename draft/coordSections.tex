@@ -20,15 +20,20 @@
 
 \thanks{Partially supported by the French ANR grant SC3A~(15\,CE40\,0004\,01).}
 
-\author{Thibault Manneville}
-\address[Thibault Manneville]{LIX, \'Ecole Polytechnique}
-\email{thibault.manneville@lix.polytechnique.fr}
-\urladdr{\url{http://www.lix.polytechnique.fr/~manneville/}}
-
 \author{Vincent Pilaud}
 \address[Vincent Pilaud]{CNRS \& LIX, \'Ecole Polytechnique, Palaiseau}
 \email{vincent.pilaud@lix.polytechnique.fr}
 \urladdr{\url{http://www.lix.polytechnique.fr/~pilaud/}}
+
+\author{Pierre-Guy Plamondon}
+\address{Universit\'e de Paris Sud XI}
+\email{pierre-guy.plamondon@math.u-psud.fr}
+\urladdr{\url{https://www.math.u-psud.fr/~plamondon/}}
+
+\author{Salvatore Stella}
+\address[Salvatore Stella]{Universit\`a degli studi di Roma ``La Sapienza''}
+\email{stella@mat.uniroma1.it}
+\urladdr{\url{http://www1.mat.uniroma1.it/people/stella/}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -197,6 +202,7 @@
 
 % silting complex
 \newcommandx{\siltingComplex}[1][1=\quiver]{\mathcal{SC}(#1)}
+\input{figures/accordionComplexTikz}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -225,13 +231,14 @@ It dissects the polygon into \defn{cells}.
 We denote by~$\quiver(\dissection)$ the quiver with relations whose vertices are the diagonals of~$\dissection$, whose arrows connect any two counterclockwise consecutive edges of a cell of~$\dissection$, and whose relations are given by triples of counterclockwise consecutive edges of a cell of~$\dissection$.
 See \fref{fig:exmAccordionDissections} for an example.
 
-We now consider $2m$ points on the unit circle alternatly colored black and white, and let~$\polygon_\circ$ (resp.~$\polygon_\bullet$) denote the convex hull of the white (resp.~black) points.
+We now consider $2m$ points on the unit circle alternately colored black and white, and let~$\polygon_\circ$ (resp.~$\polygon_\bullet$) denote the convex hull of the white (resp.~black) points.
 We fix an arbitrary reference dissection~$\dissection_\circ$ of~$\polygon_\circ$.
-A solid diagonal~$\delta_\bullet$ of~$\polygon_\bullet$ is a \defn{$\dissection_\circ$-accordion diagonal} if it does not enter and exit any cell of~$\dissection_\circ$ crossing two non-consecutive of its edges.
-In other words the diagonals of~$\dissection_\circ$ crossed by~$\delta_\bullet$ form an accordion.
+A diagonal~$\delta_\bullet$ of~$\polygon_\bullet$ is a \defn{$\dissection_\circ$-accordion diagonal} if it crosses either none or two consecutive edges of any cell of~$\dissection_\circ$.
+In other words the diagonals of~$\dissection_\circ$ crossed by~$\delta_\bullet$ together with the two boundary edges of~$\polygon_\circ$ crossed by~$\delta_\bullet$ form an accordion.
 A \defn{$\dissection_\circ$-accordion dissection} is a set of non-crossing \mbox{$\dissection_\circ$-accordion} diagonals. 
 See \fref{fig:exmAccordionDissections} for an example.
 We call \defn{$\dissection_\circ$-accordion complex} the simplicial complex~$\accordionComplex$ of $\dissection_\circ$-accordion dissections.
+This complex appeared in recent works of F.~Chapoton~\cite{Chapoton}, A.~Garver and T.~McConville~\cite{GarverMcConville}, and T.~Manneville and V.~Pilaud~\cite{MannevillePilaud}.
 
 \begin{figure}
 	\capstart
@@ -239,7 +246,6 @@ We call \defn{$\dissection_\circ$-accordion complex} the simplicial complex~$\ac
 	\caption{A dissection~$\dissection_\circ$ with its quiver~$\quiver(\dissection_\circ)$ (left), a $\dissection_\circ$-accordion diagonal (middle) and a $\dissection_\circ$-accordion dissection (right).}
 	\label{fig:exmAccordionDissections}
 \end{figure}
-
 
 %Consider a diagonal~$\delta_\circ$ of~$\dissection_\circ$ and~$\delta_\bullet$ be a $\dissection_\circ$-accordion diagonal intersecting~$\delta_\circ$.
 %Let~$\mu_\circ$ and~$\nu_\circ$ be the two other edges crossed by~$\delta_\bullet$ in the two cells of~$\dissection_\circ$ containing~$\delta_\circ$.
@@ -262,8 +268,8 @@ The \defn{$\b{g}$-vector} of~$\delta_\bullet$ with respect to~$\dissection_\circ
 \label{exm:associahedron}
 When the reference dissection~$\dissection_\circ$ is a triangulation of~$\polygon_\circ$, any diagonal of~$\polygon_\bullet$ is a $\dissection_\circ$-accordion diagonal.
 The $\dissection_\circ$-accordion complex is thus an $n$-dimensional associahedron (of type~$A$), where~$n = m-3$.
-In this case, it is known that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting complex of the quiver~$\quiver(\dissection_\circ)$ of the triangulation~$\dissection_\circ$ (see Section~\ref{sec:PGP}~for~definitions).
-The isomorphism sends a diagonal of~$\polygon_\bullet$ to the $2$-term projective complex with the sale $\b{g}$-vector.
+In this case, it is known~\cite{??} that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting complex of the quiver~$\quiver(\dissection_\circ)$ of the triangulation~$\dissection_\circ$ (see Section~\ref{sec:PGP}~for~definitions).
+The isomorphism sends a diagonal of~$\polygon_\bullet$ to the $2$-term projective complex with the same $\b{g}$-vector.
 \end{example}
 
 The initial motivation of this paper was to prove the following extension of Example~\ref{exm:associahedron}.
@@ -274,13 +280,13 @@ For any reference dissection~$\dissection_\circ$, the $\dissection_\circ$-accord
 \end{theorem}
 
 One possible approach to Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex} would be to provide an explicit bijective map between $\dissection_\circ$-accordion diagonals and $2$-term projective complexes for~$\quiver(\dissection_\circ)$.
-Such a map is easy to guess using $\b{g}$-vectors, but the proof that this map is actually a bijection and that it preserves compatibility is intricated.
+Such a map is easy to guess using $\b{g}$-vectors, but the proof that it is actually a bijection and that it preserves compatibility is intricated.
 This approach was developed in the more general context of non-kissing complexes of gentle quivers in~\cite{PaluPilaudPlamondon}.
 In this paper, we use an alternative simpler strategy to obtain Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex}, understanding accordion complexes as certain subcomplexes of the associahedron.
 
 For that, consider two nested dissections~$\dissection_\circ \subset \dissection_\circ'$.
 Observe that any~$\dissection_\circ$-accordion diagonal is a $\dissection_\circ'$-accordion diagonal.
-Conversely a $\dissection_\circ'$-accordion diagonal~$\delta_\bullet$ is a $\dissection_\circ$-accordion diagonal if and only if it does not cross any diagonal of~$\dissection_\circ' \ssm \dissection_\circ$ as a $\ZZZ$ or a~$\SSS$, that is if and only if its $\b{g}$-vector~$\gvector{\dissection_\circ'}{\delta_\bullet}$ belongs to the subspace spanned by elements in~$\dissection_\circ$.
+Conversely a $\dissection_\circ'$-accordion diagonal~$\delta_\bullet$ is a $\dissection_\circ$-accordion diagonal if and only if it does not cross any diagonal~$\delta_\circ'$ of~$\dissection_\circ' \ssm \dissection_\circ$ as a $\ZZZ$ or a~$\SSS$, that is if and only if the~$\delta_\circ'$-coordinate of its $\b{g}$-vector~$\gvector{\dissection_\circ'}{\delta_\bullet}$ vanishes for any~$\delta_\circ' \in \dissection_\circ' \ssm \dissection_\circ$.
 This observation shows the following statement.
 
 \begin{theorem}[\cite{MannevillePilaud-accordion}]
@@ -292,7 +298,7 @@ For any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, t
 Consider now any quiver with relations~$\quiver$ and any subset~$J$ of vertices of~$\quiver$.
 We call \defn{shortcut quiver} the quiver with relations~$\quiver/J$ whose vertices are the vertices of~$\quiver$ not in~$J$, whose arrows are the paths in~$\quiver$ with internal vertices in~$J$, and whose relations are inherited from those of~$\quiver$.
 For example, quivers of subdissections are shortcut quivers: if~$\dissection_\circ \subset \dissection_\circ'$, then~${\quiver(\dissection_\circ) = \quiver(\dissection_\circ')/(\dissection_\circ' \ssm \dissection_\circ)}$.
-This paper proves the following statement.
+The main result of this paper is the following statement.
 
 \begin{theorem}
 \label{thm:contractVertices}
@@ -303,15 +309,22 @@ Combining Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices} to
 
 \vincent{Fans}
 
-\newpage
-\input{figures/accordionComplexTikz}
-%\dissectionTikz{7}{1/5, 1/3}
-%\projModule{{1,2}, {3,4}}
-\centerline{\associahedronAccordionTikz{}\associahedronSiltingTikz{}}
-%\begin{tikzpicture}
-%	\node at (0,0) {\associahedronAccordionTikz{}};
-%	\node at (8,0) {\associahedronSiltingTikz{}};
-%\end{tikzpicture}
+\begin{figure}
+	\capstart
+	\centerline{\associahedronAccordionTikz{}\associahedronSiltingTikz{}}
+	\caption{The associahedron (left) and the $2$-term silting complex of an oriented triangle (right).}
+	\label{fig:associahedron}
+\end{figure}
+
+\begin{figure}
+	\capstart
+	\centerline{\accordiohedronAccordionTikz{}\accordiohedronSiltingTikz{}}
+	\caption{The $\dissection_\circ$-accordion complex of the dissection~$\dissection_\circ$ of \fref{fig:exmAccordionDissections} (left) and the $2$-term silting complex of the quiver~$\quiver(\dissection_\circ)$ (right).}
+	\label{fig:accordiohedron}
+\end{figure}
+
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
