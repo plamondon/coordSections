@@ -26,12 +26,12 @@
 \urladdr{\url{http://www.lix.polytechnique.fr/~pilaud/}}
 
 \author{Pierre-Guy Plamondon}
-\address{Universit\'e de Paris Sud XI}
+\address[Pierre-Guy Plamondon]{Universit\'e de Paris Sud XI}
 \email{pierre-guy.plamondon@math.u-psud.fr}
 \urladdr{\url{https://www.math.u-psud.fr/~plamondon/}}
 
 \author{Salvatore Stella}
-\address[Salvatore Stella]{Universit\`a degli studi di Roma ``La Sapienza''}
+\address[Salvatore Stella]{University of Haifa}
 \email{stella@mat.uniroma1.it}
 \urladdr{\url{http://www1.mat.uniroma1.it/people/stella/}}
 
@@ -150,7 +150,7 @@
 \newcommand{\biggvector}[2]{\mathbf{g} \big( #1 \,|\, #2 \big)} % g-vector of the cluster variable #2 with respect to the initial cluster #1
 \newcommand{\gvectors}[2]{\mathbf{g}(#1 \,|\, #2)} % g-vectors of the cluster #2 with respect to the initial cluster #1
 \newcommand{\biggvectors}[2]{\mathbf{g} \big( #1 \,|\, #2 \big)} % g-vectors of the cluster  #2 with respect to the initial cluster #1
-\newcommand{\gvectorFan}{\mathcal{F}^\mathbf{g}} % g-vector fan
+\newcommandx{\gvectorFan}[1][1=\dissection_\circ]{\mathcal{F}^\mathbf{g}(#1)} % g-vector fan
 \newcommand{\bg}[1]{\mathbf{g}(#1)}
 % d-vectors
 \newcommand{\comp}[2]{(#1 \,|\, #2)} % compatibility
@@ -238,7 +238,7 @@ In other words the diagonals of~$\dissection_\circ$ crossed by~$\delta_\bullet$ 
 A \defn{$\dissection_\circ$-accordion dissection} is a set of non-crossing \mbox{$\dissection_\circ$-accordion} diagonals. 
 See \fref{fig:exmAccordionDissections} for an example.
 We call \defn{$\dissection_\circ$-accordion complex} the simplicial complex~$\accordionComplex$ of $\dissection_\circ$-accordion dissections.
-This complex appeared in recent works of F.~Chapoton~\cite{Chapoton}, A.~Garver and T.~McConville~\cite{GarverMcConville}, and T.~Manneville and V.~Pilaud~\cite{MannevillePilaud}.
+This complex appeared in recent works of F.~Chapoton~\cite{Chapoton}, A.~Garver and T.~McConville~\cite{GarverMcConville}, and T.~Manneville and V.~Pilaud~\cite{MannevillePilaud-accordion}.
 
 \begin{figure}
 	\capstart
@@ -270,9 +270,10 @@ When the reference dissection~$\dissection_\circ$ is a triangulation of~$\polygo
 The $\dissection_\circ$-accordion complex is thus an $n$-dimensional associahedron (of type~$A$), where~$n = m-3$.
 In this case, it is known~\cite{??} that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting complex of the quiver~$\quiver(\dissection_\circ)$ of the triangulation~$\dissection_\circ$ (see Section~\ref{sec:PGP}~for~definitions).
 The isomorphism sends a diagonal of~$\polygon_\bullet$ to the $2$-term projective complex with the same $\b{g}$-vector.
+See \fref{fig:associahedron} for an illustration.
 \end{example}
 
-The initial motivation of this paper was to prove the following extension of Example~\ref{exm:associahedron}.
+The initial motivation of this paper was to prove the following extension of Example~\ref{exm:associahedron}, suggested by the similarity of the two pictures of \fref{fig:accordiohedron} pointed out to us by F.~Chapoton.
 
 \begin{theorem}
 \label{thm:bijectionAccordionComplexSiltingComplex}
@@ -292,7 +293,7 @@ This observation shows the following statement.
 \begin{theorem}[\cite{MannevillePilaud-accordion}]
 \label{thm:contractDiagonals}
 %Consider two dissections~$\dissection_\circ \subset \dissection_\circ'$. A $\dissection_\circ'$-accordion diagonal~$\delta_\bullet$ is also a $\dissection_\circ$-accordion diagonal if and only if ${\sign{\delta'_\circ}{\dissection_\circ}{\delta_\bullet}}$ vanishes for all~$\delta'_\circ \in \dissection_\circ' \ssm \dissection_\circ$.
-For any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, the accordion complex~$\accordionComplex$ is isomorphic to the subcomplex of~$\accordionComplex[\dissection_\circ']$ induced by $\dissection_\circ'$-accordion diagonals~$\delta_\bullet$ whose $\b{g}$-vector~$\gvector{\dissection_\circ'}{\delta_\bullet}$ lie in the coordinate subspace spanned by elements in~$\dissection_\circ$.
+For any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, the accordion complex~$\accordionComplex$ is isomorphic to the subcomplex of~$\accordionComplex[\dissection_\circ']$ induced by $\dissection_\circ'$-accordion diagonals~$\delta_\bullet$ whose $\b{g}$-vector $\gvector{\dissection_\circ'}{\delta_\bullet}$ lie in the coordinate subspace spanned by elements in~$\dissection_\circ$.
 \end{theorem}
 
 Consider now any quiver with relations~$\quiver$ and any subset~$J$ of vertices of~$\quiver$.
@@ -307,7 +308,17 @@ For any quiver with relations~$\quiver$ and any subset~$J$ of vertices of~$\quiv
 
 Combining Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices} together with Example~\ref{exm:associahedron} proves Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex}.
 
-\vincent{Fans}
+We conclude this section with a geometric interpretation of the common phenomenon described in Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices}.
+For a $\dissection_\circ$-accordion dissection~$\dissection_\bullet$, denote by~$\R_{\ge0}\,\gvector{\dissection_\circ}{\dissection_\bullet}$ the polyhedral cone generated by the set of $\b{g}$-vectors~$\gvector{\dissection_\circ}{\dissection_\bullet} \eqdef \set{\gvector{\dissection_\circ}{\delta_\bullet}}{\delta_\bullet \in \dissection_\bullet}$. The collection~$\gvectorFan$ of cones~$\R_{\ge0}\gvector{\dissection_\circ}{\dissection_\bullet}$ for all $\dissection_\circ$-accordion dissections~$\dissection_\bullet$
+%\[
+%\gvectorFan \eqdef \set{\R_{\ge0}\gvector{\dissection_\circ}{\dissection_\bullet}}{\text{$\dissection_\bullet$ any $\dissection_\circ$-accordion dissection}}
+%\]
+is a complete simplicial fan called \defn{$\b{g}$-vector fan} of~$\dissection_\circ$~\cite{MannevillePilaud-accordion}.
+The crucial feature of this fan is that no coordinate hyperplane meets the interior of any of its maximal cones.
+This is often referred to as the \defn{sign-coherence property} of $\b{g}$-vectors.
+It implies that for any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, the section of~$\gvectorFan[\dissection_\circ']$ with the coordinate subspace~$\R^{\dissection_\circ}$ is a subfan~$\gvectorFan[\dissection_\circ']$.
+The content of Theorem~\ref{thm:contractDiagonals} is that this subfan is the $\b{g}$-vector fan~$\gvectorFan$.
+A similar statement holds for Theorem~\ref{thm:contractVertices}.
 
 \begin{figure}
 	\capstart
@@ -330,7 +341,7 @@ Combining Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices} to
 
 \section*{Acknoledgements}
 
-We are grateful to F.~Chapoton for various conversations on quadrangulations and Stokes posets.
+We are grateful to F.~Chapoton for pointing out to us the similarity between the two pictures of \fref{fig:accordiohedron} which gave us the motivation for the present paper.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
