@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.8)  28 SEP 2017 19:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex 2014.12.8)  3 OCT 2017 15:44
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1178,42 +1178,42 @@ File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.0 (rcs-revision 1.7)
 ) (./coordSections.aux)
 \openout1 = `coordSections.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 203.
-LaTeX Font Info:    ... okay on input line 203.
-LaTeX Font Info:    Try loading font information for U+msa on input line 203.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 202.
+LaTeX Font Info:    ... okay on input line 202.
+LaTeX Font Info:    Try loading font information for U+msa on input line 202.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 203.
+LaTeX Font Info:    Try loading font information for U+msb on input line 202.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 203.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 202.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+wasy on input line 203.
+LaTeX Font Info:    Try loading font information for U+wasy on input line 202.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/wasysym/uwasy.fd
 File: uwasy.fd 2003/10/30 v2.0 Wasy-2 symbol font definitions
 )
 LaTeX Font Info:    Try loading font information for U+shuffle on input line 20
-3.
+2.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/shuffle/Ushuffle.fd
 File: Ushuffle.fd 
@@ -1247,7 +1247,7 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 \AtBeginShipoutBox=\box111
-Package hyperref Info: Link coloring ON on input line 203.
+Package hyperref Info: Link coloring ON on input line 202.
 
 (/usr/local/texlive/2014/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -1257,9 +1257,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count288
 )
-LaTeX Info: Redefining \ref on input line 203.
-LaTeX Info: Redefining \pageref on input line 203.
-LaTeX Info: Redefining \nameref on input line 203.
+LaTeX Info: Redefining \ref on input line 202.
+LaTeX Info: Redefining \pageref on input line 202.
+LaTeX Info: Redefining \nameref on input line 202.
 
 (./coordSections.out) (./coordSections.out)
 \@outlinefile=\write5
@@ -1269,459 +1269,86 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 Package marginnote Info: \pdfoutput not 0 and \pdflastxpos available.
 (marginnote)             Extended position detection mode activated.
-Package xypdf Info: Line width: 0.39998pt on input line 203.
+Package xypdf Info: Line width: 0.39998pt on input line 202.
 
 ABD: EveryShipout initializing macros
 
-LaTeX Warning: Reference `' on page 1 undefined on input line 226.
+LaTeX Warning: Reference `' on page 1 undefined on input line 225.
 
-[1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-[2] <figures/accordions.pdf, id=206, 481.86023pt x 100.53459pt>
-File: figures/accordions.pdf Graphic file (type pdf)
+Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
+ine 250.
 
-<use figures/accordions.pdf>
-Package pdftex.def Info: figures/accordions.pdf used on input line 315.
-(pdftex.def)             Requested size: 385.48871pt x 80.42778pt.
- [3 <./figures/accordions.pdf>]
-<figures/exmAccordionDissections.pdf, id=227, 540.18512pt x 131.27144pt>
-File: figures/exmAccordionDissections.pdf Graphic file (type pdf)
+LaTeX Warning: Reference `sec:PGP' on page 1 undefined on input line 256.
 
-<use figures/exmAccordionDissections.pdf>
-Package pdftex.def Info: figures/exmAccordionDissections.pdf used on input line
- 332.
-(pdftex.def)             Requested size: 432.14868pt x 105.01727pt.
 
-<figures/exmAccordionComplex.pdf, id=228, 181.24413pt x 192.95387pt>
-File: figures/exmAccordionComplex.pdf Graphic file (type pdf)
+LaTeX Warning: Citation `PaluPilaudPlamondon' on page 1 undefined on input line
+ 268.
 
-<use figures/exmAccordionComplex.pdf>
-Package pdftex.def Info: figures/exmAccordionComplex.pdf used on input line 341
-.
-(pdftex.def)             Requested size: 181.24368pt x 192.9534pt.
 
-<figures/exmAccordionLattice.pdf, id=229, 185.92963pt x 201.67546pt>
-File: figures/exmAccordionLattice.pdf Graphic file (type pdf)
+LaTeX Warning: Citation `MannevillePilaud-accordion' on page 1 undefined on inp
+ut line 276.
 
-<use figures/exmAccordionLattice.pdf>
-Package pdftex.def Info: figures/exmAccordionLattice.pdf used on input line 341
-.
-(pdftex.def)             Requested size: 185.92917pt x 201.67496pt.
 
-Overfull \hbox (3.86209pt too wide) in paragraph at lines 350--351
-[][]\T1/aer/bx/n/10 Remark 3. []\T1/aer/m/n/10 Spe-cial ref-er-ence hol-low dis
--sec-tions $\OT1/cmr/m/n/10 D[]$ \T1/aer/m/n/10 give rise to spe-cial ac-cor-di
-on com-plexes $[]\OT1/cmr/m/n/10 (D[])$\T1/aer/m/n/10 : 
+Overfull \hbox (5.16396pt too wide) in paragraph at lines 279--280
+\T1/aer/m/it/10 mor-phic to the sub-com-plex of $[]\OT1/cmr/m/n/10 (D[])$ \T1/a
+er/m/it/10 in-duced by $\OT1/cmr/m/n/10 D[]$\T1/aer/m/it/10 -accordion di-ag-o-
+nals $\OML/cmm/m/it/10 ^^N[]$ \T1/aer/m/it/10 whose $\OT1/cmr/bx/n/10 g$\T1/aer
+/m/it/10 -vector $\OT1/cmr/bx/n/10 g\OT1/cmr/m/n/10 (D[] \OMS/cmsy/m/n/10 j \OM
+L/cmm/m/it/10 ^^N[]\OT1/cmr/m/n/10 )$
  []
 
+(./coordSections.bbl
 
-Overfull \hbox (4.05861pt too wide) in paragraph at lines 355--356
-\T1/aer/m/n/10 the Stokes com-plex de-fined by Y. Barysh-nikov [[]] and stud-ie
-d []. 
- []
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
 
-[4 <./figures/exmAccordionDissections.pdf>] [5 <./figures/exmAccordionComplex.p
-df> <./figures/exmAccordionLattice.pdf>]
-Overfull \hbox (1.01091pt too wide) in paragraph at lines 410--411
-[]\T1/aer/m/n/10 The first sen-tence is a con-se-quence of Lemma [][]7[][]: for
- any four con-sec-u-tive ver-tices $\OML/cmm/m/it/10 p[]; q[]; r[]; s[]$
- []
-
-<figures/exmFlip.pdf, id=294, 328.21924pt x 140.47382pt>
-File: figures/exmFlip.pdf Graphic file (type pdf)
-
-<use figures/exmFlip.pdf>
-Package pdftex.def Info: figures/exmFlip.pdf used on input line 417.
-(pdftex.def)             Requested size: 328.21843pt x 140.47345pt.
- [6 <./figures/exmFlip.pdf>]
-Overfull \hbox (3.91397pt too wide) in paragraph at lines 432--433
-\T1/aer/m/n/10 pairs $\OMS/cmsy/m/n/10 f\OT1/cmr/m/n/10 D[]\OML/cmm/m/it/10 ; \
-OT1/cmr/m/n/10 D[]\OMS/cmsy/m/n/10 g$ \T1/aer/m/n/10 of max-i-mal $\OT1/cmr/m/n
-/10 D[]$\T1/aer/m/n/10 -accordion dis-sec-tions with $\OT1/cmr/m/n/10 D[] \U/ms
-b/m/n/10 r \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 ^^N[]\OMS/cmsy/m/n/10 g \OT1/cmr/
-m/n/10 = D[] \U/msb/m/n/10 r \OMS/cmsy/m/n/10 f\OML/cmm/m/it/10 ^^N[]\OMS/cmsy/
-m/n/10 g$\T1/aer/m/n/10 . See []. 
- []
-
-[7]
-Overfull \hbox (2.78214pt too wide) in paragraph at lines 476--477
-[]\T1/aer/m/n/10 Since $\OT1/cmr/m/n/10 D[][] []$ \T1/aer/m/n/10 and $\OT1/cmr/
-m/n/10 D[][] []$ \T1/aer/m/n/10 are both
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 481.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 481.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 491.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 491.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 491.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 491.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 495--500
-
- []
-
-[8]
-Overfull \hbox (1.88283pt too wide) in paragraph at lines 570--571
-[]\T1/aer/m/it/10 the $\OT1/cmr/m/n/10 D[]$\T1/aer/m/it/10 -accordion di-ag-o-n
-als not in the source dis-sec-tion $\OT1/cmr/m/n/10 D[][] []$
- []
-
-[9]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 629.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 629.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 629.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 629.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\circ' on input line 629.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 629.
-
-LaTeX Font Info:    Try loading font information for U+euf on input line 638.
-(/usr/local/texlive/2014/texmf-dist/tex/latex/amsfonts/ueuf.fd
-File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
 )
-Overfull \hbox (2.72601pt too wide) in paragraph at lines 656--664
-\T1/aer/m/n/10 For that, let $\OT1/cmr/m/n/10 Z[]$ \T1/aer/m/n/10 de-note the z
-igzag of the ac-cor-dion crossed by $\OML/cmm/m/it/10 ^^M[]$ \T1/aer/m/n/10 in 
-$\OT1/cmr/m/n/10 D[]$\T1/aer/m/n/10 , and de-com-pose $[]$
- []
+LaTeX Font Info:    Try loading font information for T1+aett on input line 309.
 
-
-Overfull \hbox (1.40805pt too wide) in paragraph at lines 656--664
-\T1/aer/m/n/10 such that $\OT1/cmr/bx/n/10 g\OT1/cmr/m/n/10 (D[] \OMS/cmsy/m/n/
-10 j \OML/cmm/m/it/10 ^^M[]\OT1/cmr/m/n/10 ) = [][] \OMS/cmsy/m/n/10 ^^@ [][]$ 
-\T1/aer/m/n/10 (where $[][][] [][] \OT1/cmr/bx/n/10 e[]$ \T1/aer/m/n/10 for $[]
-$). Let $\OML/cmm/m/it/10 ^^N[]$ \T1/aer/m/n/10 be a []
- []
-
-[10]
-Overfull \hbox (7.49121pt too wide) in paragraph at lines 666--667
-[]\T1/aer/m/n/10 If $\OML/cmm/m/it/10 ^^M[]$ \T1/aer/m/n/10 and $\OML/cmm/m/it/
-10 ^^N[]$ \T1/aer/m/n/10 have a com-mon end-point, and $\OML/cmm/m/it/10 ^^M[]^
-^N[]$ \T1/aer/m/n/10 form a coun-ter-clock-wise an-gle, then $\OMS/cmsy/m/n/10 
-j[]j$
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 690.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 690.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 690.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 690.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\circ' on input line 690.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 690.
-
-
-Overfull \hbox (8.13016pt too wide) in paragraph at lines 701--702
-[]\T1/aer/m/n/10 The proof uses the fol-low-ing char-ac-ter-i-za-tion of com-pl
-ete sim-pli-cial fans [[], Corol-lary 4.5.20].
- []
-
-[11]
-Overfull \hbox (6.35187pt too wide) in paragraph at lines 733--734
-[]\T1/aer/m/n/10 For an ar-bi-trary tri-an-gu-la-tion $\OT1/cmr/m/n/10 T[]$ \T1
-/aer/m/n/10 (with or with-out in-te-rior tri-an-gle), the $\OT1/cmr/bx/n/10 g$\
-T1/aer/m/n/10 -vector fan $\OMS/cmsy/m/n/10 F[]\OT1/cmr/m/n/10 (T[])$
- []
-
-<figures/gvectorFan1.pdf, id=435, 128.84837pt x 142.84267pt>
-File: figures/gvectorFan1.pdf Graphic file (type pdf)
-
-<use figures/gvectorFan1.pdf>
-Package pdftex.def Info: figures/gvectorFan1.pdf used on input line 748.
-(pdftex.def)             Requested size: 173.94565pt x 192.83797pt.
-
-<figures/gvectorFan2.pdf, id=436, 126.18845pt x 142.84166pt>
-File: figures/gvectorFan2.pdf Graphic file (type pdf)
-
-<use figures/gvectorFan2.pdf>
-Package pdftex.def Info: figures/gvectorFan2.pdf used on input line 748.
-(pdftex.def)             Requested size: 170.35474pt x 192.83661pt.
-
-<figures/gvectorFan3.pdf, id=437, 151.91957pt x 155.29518pt>
-File: figures/gvectorFan3.pdf Graphic file (type pdf)
-
-<use figures/gvectorFan3.pdf>
-Package pdftex.def Info: figures/gvectorFan3.pdf used on input line 748.
-(pdftex.def)             Requested size: 205.09183pt x 209.6489pt.
-
-<figures/gvectorFan4.pdf, id=438, 151.71681pt x 155.63545pt>
-File: figures/gvectorFan4.pdf Graphic file (type pdf)
-
-<use figures/gvectorFan4.pdf>
-Package pdftex.def Info: figures/gvectorFan4.pdf used on input line 748.
-(pdftex.def)             Requested size: 204.8181pt x 210.10826pt.
-
-Overfull \hbox (3.6392pt too wide) in paragraph at lines 777--778
-[][]\T1/aer/bx/n/10 Lemma 33. []\T1/aer/m/it/10 If $\OT1/cmr/m/n/10 D[]\OML/cmm
-/m/it/10 ; \OT1/cmr/m/n/10 D[]$ \T1/aer/m/it/10 are two ad-ja-cent max-i-mal $\
-OT1/cmr/m/n/10 D[]$\T1/aer/m/it/10 -accordion dis-sec-tions, and $\OML/cmm/m/it
-/10 ^^N[] \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 D[]$ \T1/aer/m/it/10 and $[]$
- []
-
-[12] [13 <./figures/gvectorFan1.pdf> <./figures/gvectorFan2.pdf> <./figures/gve
-ctorFan3.pdf> <./figures/gvectorFan4.pdf>]
-<figures/exmAccordiohedraDecomposed.pdf, id=492, 1534.30208pt x 1370.37973pt>
-File: figures/exmAccordiohedraDecomposed.pdf Graphic file (type pdf)
-
-<use figures/exmAccordiohedraDecomposed.pdf>
-Package pdftex.def Info: figures/exmAccordiohedraDecomposed.pdf used on input l
-ine 843.
-(pdftex.def)             Requested size: 424.58624pt x 379.208pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 853.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 853.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\circ' on input line 853.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 853.
-
-[14] [15 <./figures/exmAccordiohedraDecomposed.pdf>] [16]
-Overfull \hbox (7.70784pt too wide) in paragraph at lines 901--906
-[]\T1/aer/m/n/10 if $\OT1/cmr/m/n/10 ^^F : \U/msb/m/n/10 R[] \OMS/cmsy/m/n/10 !
- \U/msb/m/n/10 R[]$ \T1/aer/m/n/10 de-notes the isom-e-try de-fined by $[]\OT1/
-cmr/m/n/10 ^^F(\OT1/cmr/bx/n/10 x\OT1/cmr/m/n/10 )[][][]\OML/cmm/m/it/10 "\OT1/
-cmr/m/n/10 (\OML/cmm/m/it/10 ^^[\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 ^^A \OT1/cmr
-/bx/n/10 x[]\OML/cmm/m/it/10 ;$ \T1/aer/m/n/10 (where $[]$
- []
-
-
-Overfull \hbox (12.42244pt too wide) detected at line 915
-[]
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 955.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 955.
-
-[17]
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 963.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 963.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 992.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 992.
-
-
-Overfull \hbox (10.17331pt too wide) in paragraph at lines 1007--1008
-[][]\T1/aer/bx/n/10 Example 46. []\T1/aer/m/n/10 Con-sider a hol-low oc-tagon a
-nd the ref-er-ence dis-sec-tion $\OT1/cmr/m/n/10 D[][]\OMS/cmsy/m/n/10 f\OT1/cm
-r/m/n/10 1[]5[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5[]9[]\OML/cmm/m/it/10 ; \OT1
-/cmr/m/n/10 9[]13[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 13[]1[]\OMS/cmsy/m/n/10 g
-$
- []
-
-[18]
-Underfull \hbox (badness 10000) in paragraph at lines 1049--1050
-
- []
-
-<figures/proofdvectorFan.pdf, id=565, 455.42145pt x 119.20235pt>
-File: figures/proofdvectorFan.pdf Graphic file (type pdf)
-
-<use figures/proofdvectorFan.pdf>
-Package pdftex.def Info: figures/proofdvectorFan.pdf used on input line 1072.
-(pdftex.def)             Requested size: 455.42032pt x 119.20204pt.
- [19]
-<figures/dvectorFan1.pdf, id=585, 126.18845pt x 142.84166pt>
-File: figures/dvectorFan1.pdf Graphic file (type pdf)
-
-<use figures/dvectorFan1.pdf>
-Package pdftex.def Info: figures/dvectorFan1.pdf used on input line 1094.
-(pdftex.def)             Requested size: 170.35474pt x 192.83661pt.
-
-<figures/dvectorFan2.pdf, id=586, 126.18845pt x 142.84166pt>
-File: figures/dvectorFan2.pdf Graphic file (type pdf)
-
-<use figures/dvectorFan2.pdf>
-Package pdftex.def Info: figures/dvectorFan2.pdf used on input line 1094.
-(pdftex.def)             Requested size: 170.35474pt x 192.83661pt.
-
-<figures/dvectorFan3.pdf, id=587, 126.18845pt x 142.84166pt>
-File: figures/dvectorFan3.pdf Graphic file (type pdf)
-
-<use figures/dvectorFan3.pdf>
-Package pdftex.def Info: figures/dvectorFan3.pdf used on input line 1094.
-(pdftex.def)             Requested size: 170.35474pt x 192.83661pt.
-
-<figures/dvectorFan4.pdf, id=588, 122.98146pt x 143.02635pt>
-File: figures/dvectorFan4.pdf Graphic file (type pdf)
-
-<use figures/dvectorFan4.pdf>
-Package pdftex.def Info: figures/dvectorFan4.pdf used on input line 1094.
-(pdftex.def)             Requested size: 166.02528pt x 193.08595pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1123.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1123.
-
-
-Overfull \hbox (1.36366pt too wide) in paragraph at lines 1126--1127
-[]$ \T1/aer/m/it/10 if and only if $\OML/cmm/m/it/10 ^^N[]$ \T1/aer/m/it/10 doe
-s not cross any di-ag-o-nal of $[]$. 
- []
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1136.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 1136.
-
-[20 <./figures/proofdvectorFan.pdf>]
-<figures/exmAccordiohedronProjected.pdf, id=613, 1694.79169pt x 461.5905pt>
-File: figures/exmAccordiohedronProjected.pdf Graphic file (type pdf)
-
-<use figures/exmAccordiohedronProjected.pdf>
-Package pdftex.def Info: figures/exmAccordiohedronProjected.pdf used on input l
-ine 1151.
-(pdftex.def)             Requested size: 474.53844pt x 129.24445pt.
-
-Overfull \hbox (5.6254pt too wide) in paragraph at lines 1161--1162
-[]\T1/aer/m/it/10 the in-ter-sec-tion of the half-spaces $[]$ for all []-
- []
-
-[21 <./figures/dvectorFan1.pdf> <./figures/dvectorFan2.pdf> <./figures/dvectorF
-an3.pdf> <./figures/dvectorFan4.pdf>] [22 <./figures/exmAccordiohedronProjected
-.pdf>] (./coordSections.bbl [23]
-LaTeX Font Info:    Try loading font information for T1+aett on input line 66.
-
-(/usr/local/texlive/2014/texmf-dist/tex/latex/ae/t1aett.fd
+ (/usr/local/texlive/2014/texmf-dist/tex/latex/ae/t1aett.fd
 File: t1aett.fd 1997/11/16 Font definitions for T1/aett.
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
+) [1{/usr/local/texlive/2014/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 309.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 309.
 
- [24])
-[25]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1257.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1257.
- (./coordSections.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1257.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1257.
-
+(./coordSections.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 309.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 309.
 Package rerunfilecheck Info: File `coordSections.out' has not changed.
-(rerunfilecheck)             Checksum: 6D3E285B7A3BA43EE9329F88938B7DC0;1391.
+(rerunfilecheck)             Checksum: BD5DA2D7901AD7F00F14E9CE72C0C6E7;189.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1257.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 309.
  ) 
 Here is how much of TeX's memory you used:
- 30838 strings out of 493117
- 592303 string characters out of 6135433
- 728430 words of memory out of 5000000
- 33331 multiletter control sequences out of 15000+600000
- 43882 words of font info for 109 fonts, out of 8000000 for 9000
+ 30537 strings out of 493117
+ 587054 string characters out of 6135433
+ 721284 words of memory out of 5000000
+ 33217 multiletter control sequences out of 15000+600000
+ 36936 words of font info for 99 fonts, out of 8000000 for 9000
  1302 hyphenation exceptions out of 8191
- 60i,13n,94p,10373b,515s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 60i,9n,94p,10373b,672s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
-/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></u
-sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
-r/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/l
-ocal/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/loc
-al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local
-/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/t
-exlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texl
-ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive
-/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/20
-14/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/local/texlive/201
-4/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/texlive/2014
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2014/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2014/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2014/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2014/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmti7.pfb></usr/local/texlive/2014/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2014/texmf-dist/font
-s/type1/public/amsfonts/euler/eufm10.pfb></usr/local/texlive/2014/texmf-dist/fo
-nts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2014/texmf-dis
-t/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2014/texmf
--dist/fonts/type1/public/amsfonts/symbols/msbm5.pfb></usr/local/texlive/2014/te
-xmf-dist/fonts/type1/public/amsfonts/symbols/msbm7.pfb>
-Output written on coordSections.pdf (25 pages, 553836 bytes).
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb
+></usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
+</usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+/usr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></u
+sr/local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/
+local/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/loc
+al/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsl10.pfb></usr/loca
+l/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local
+/texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
+texlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/te
+xlive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
+ive/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texli
+ve/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive
+/2014/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb></usr/local/texlive/2
+014/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on coordSections.pdf (2 pages, 163604 bytes).
 PDF statistics:
- 834 PDF objects out of 1000 (max. 8388607)
- 735 compressed objects within 8 object streams
- 171 named destinations out of 1000 (max. 500000)
- 245 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 114 PDF objects out of 1000 (max. 8388607)
+ 93 compressed objects within 1 object stream
+ 12 named destinations out of 1000 (max. 500000)
+ 37 words of extra memory for PDF output out of 10000 (max. 10000000)
 
