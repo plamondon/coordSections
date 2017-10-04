@@ -25,7 +25,7 @@
 \urladdr{\url{http://www.lix.polytechnique.fr/~pilaud/}}
 
 \author{Pierre-Guy Plamondon}
-\address[Pierre-Guy Plamondon]{Universit\'e de Paris Sud XI}
+\address[Pierre-Guy Plamondon]{Laboratoire de Math\'ematiques d?Orsay, Universit\'e Paris-Sud, CNRS, Universit\'e Paris-Saclay}
 \email{pierre-guy.plamondon@math.u-psud.fr}
 \urladdr{\url{https://www.math.u-psud.fr/~plamondon/}}
 
@@ -240,7 +240,7 @@ This follows from results that have been referred to as ``additive categorificat
 \begin{figure}
 	\capstart
 	\centerline{\associahedronAccordionTikz{}\associahedronSiltingTikz{}}
-	\caption{The exchange graph on triangulations of a hexagon (left) and the exchange graph on support $\tau$-tilting modules of the quiver with relations~$\quiver$ (right).}
+	\caption{The exchange graph on triangulations of a hexagon (left) and the exchange graph on support $\tau$-tilting modules of the quiver with relations~$\overline{\quiver}$ (right).}
 	\label{fig:associahedron}
 \end{figure}
 
@@ -249,7 +249,7 @@ F.~Chapoton observed a similar isomorphism between the exchange graphs of certai
 \begin{figure}
 	\capstart
 	\centerline{\accordiohedronAccordionTikz{}\accordiohedronSiltingTikz{}}
-	\caption{The $\dissection_\circ$-accordion complex of the dissection~$\dissection_\circ$ of \fref{fig:exmAccordionDissections} (left) and the $2$-term silting complex of the quiver~$\quiver(\dissection_\circ)$ (right).}
+	\caption{The $\dissection_\circ$-accordion complex of the dissection~$\dissection_\circ$ of \fref{fig:exmAccordionDissections} (left) and the $2$-term silting complex of the quiver~$\overline{\quiver}(\dissection_\circ)$ (right).}
 	\label{fig:accordiohedron}
 \end{figure}
 
@@ -449,7 +449,7 @@ We call \defn{diagonals} of~$\polygon$ the segments connecting two non-consecuti
 A \defn{dissection} of~$\polygon$ is a set~$\dissection$ of non-crossing diagonals.
 It dissects the polygon into \defn{cells}.
 %We denote by~$Q(\dissection)$ the quiver with relations having a vertex for each diagonal of~$\dissection$, an arrow connecting any two counterclockwise consecutive edges of a cell of~$\dissection$, and a relation between any two arrows connecting three counterclockwise consecutive edges of a cell~of~$\dissection$.
-We denote by~$\quiver(\dissection)$ the quiver with relations whose vertices are the diagonals of~$\dissection$, whose arrows connect any two counterclockwise consecutive edges of a cell of~$\dissection$, and whose relations are given by triples of counterclockwise consecutive edges of a cell of~$\dissection$.
+We denote by~$\overline{\quiver}(\dissection)$ the quiver with relations whose vertices are the diagonals of~$\dissection$, whose arrows connect any two counterclockwise consecutive edges of a cell of~$\dissection$, and whose relations are given by triples of counterclockwise consecutive edges of a cell of~$\dissection$.
 See \fref{fig:exmAccordionDissections} for an example.
 
 We now consider $2m$ points on the unit circle alternately colored black and white, and let~$\polygon_\circ$ (resp.~$\polygon_\bullet$) denote the convex hull of the white (resp.~black) points.
@@ -464,7 +464,7 @@ This complex appeared in recent works of F.~Chapoton~\cite{Chapoton-quadrangulat
 \begin{figure}
 	\capstart
 	\centerline{\includegraphics[width=\textwidth]{exmAccordionDissections}}
-	\caption{A dissection~$\dissection_\circ$ with its quiver~$\quiver(\dissection_\circ)$ (left), a $\dissection_\circ$-accordion diagonal (middle) and a $\dissection_\circ$-accordion dissection (right).}
+	\caption{A dissection~$\dissection_\circ$ with its quiver~$\overline{\quiver}(\dissection_\circ)$ (left), a $\dissection_\circ$-accordion diagonal (middle) and a $\dissection_\circ$-accordion dissection (right).}
 	\label{fig:exmAccordionDissections}
 \end{figure}
 
@@ -489,7 +489,7 @@ The \defn{$\b{g}$-vector} of~$\delta_\bullet$ with respect to~$\dissection_\circ
 \label{exm:associahedron}
 When the reference dissection~$\dissection_\circ$ is a triangulation of~$\polygon_\circ$, any diagonal of~$\polygon_\bullet$ is a $\dissection_\circ$-accordion diagonal.
 The $\dissection_\circ$-accordion complex is thus an $n$-dimensional associahedron (of type~$A$), where~$n = m-3$.
-In this case, it is known~\cite{??} that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting object of the quiver~$\quiver(\dissection_\circ)$ of the triangulation~$\dissection_\circ$ (see Section~\ref{sec:PGP}~for~definitions).
+In this case, it is known~\cite{??} that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting object of the quiver~$\overline{\quiver}(\dissection_\circ)$ of the triangulation~$\dissection_\circ$ (see Section~\ref{sec:PGP}~for~definitions).
 The isomorphism sends a diagonal of~$\polygon_\bullet$ to the $2$-term silting object with the same $\b{g}$-vector.
 See \fref{fig:associahedron} for an illustration.
 \end{example}
@@ -498,10 +498,10 @@ The initial motivation of this note was to prove the following extension of Exam
 
 \begin{theorem}
 \label{thm:bijectionAccordionComplexSiltingComplex}
-For any reference dissection~$\dissection_\circ$, the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting object of the quiver~$\quiver(\dissection_\circ)$.
+For any reference dissection~$\dissection_\circ$, the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting object of the quiver~$\overline{\quiver}(\dissection_\circ)$.
 \end{theorem}
 
-One possible approach to Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex} would be to provide an explicit bijective map between $\dissection_\circ$-accordion diagonals and $2$-term silting objects for~$\quiver(\dissection_\circ)$.
+One possible approach to Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex} would be to provide an explicit bijective map between $\dissection_\circ$-accordion diagonals and $2$-term silting objects for~$\overline{\quiver}(\dissection_\circ)$.
 Such a map is easy to guess using $\b{g}$-vectors, but the proof that it is actually a bijection and that it preserves compatibility is intricated.
 This approach was developed in the more general context of non-kissing complexes of gentle quivers in~\cite{PaluPilaudPlamondon}.
 In this note, we use an alternative simpler strategy to obtain Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex}, understanding accordion complexes as certain subcomplexes of the associahedron.
@@ -517,21 +517,30 @@ This observation shows the following statement.
 For any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, the accordion complex~$\accordionComplex(\dissection_\circ)$ is isomorphic to the subcomplex of~$\accordionComplex(\dissection_\circ')$ induced by $\dissection_\circ'$-accordion diagonals~$\delta_\bullet$ whose $\b{g}$-vector $\gvector{\dissection_\circ'}{\delta_\bullet}$ lie in the coordinate subspace spanned by elements in~$\dissection_\circ$.
 \end{theorem}
 
-Consider now any quiver with relations~$\quiver$ and any subset~$J$ of vertices of~$\quiver$.
-We call \defn{shortcut quiver} the quiver with relations~$\quiver/J$ whose vertices are the vertices of~$\quiver$ not in~$J$, whose arrows are the paths in~$\quiver$ with internal vertices in~$J$, and whose relations are inherited from those of~$\quiver$.
-For example, quivers of subdissections are shortcut quivers: if~$\dissection_\circ \subset \dissection_\circ'$, then~${\quiver(\dissection_\circ) = \quiver(\dissection_\circ')/(\dissection_\circ' \ssm \dissection_\circ)}$.
-The following statement is a reformulation of Theorem~\ref{thm:mainAlgThm} in terms of quivers.
-\vincent{Not really}
-%The main result of this note is the following statement.
+Let~$\overline{\quiver} = (\quiver, I)$ be any gentle quiver with relations~\cite{ButlerRingel} and~$J$ be any subset of vertices of~$\overline{\quiver}$.
+We call \defn{shortcut quiver} the quiver with relations~$\overline{\quiver}_J = (\quiver_J, I_J)$ whose vertices are the elements of~$J$, whose arrows are the paths in~$\overline{\quiver}$ with endpoints in~$J$ but no internal vertex in~$J$, and whose relations are inherited from those of~$\overline{\quiver}$.
+Then the algebra~$k\quiver_J/I_J$ is gentle and is isomorphic to the algebra~$e_J (k\quiver/I) e_J$.
+
+\begin{example}
+Quivers of dissections are shortcut quivers: if~$\dissection_\circ \subset \dissection_\circ'$, then~${\overline{\quiver}(\dissection_\circ) = \overline{\quiver}(\dissection_\circ')_{\dissection_\circ}}$.
+In particular, for any dissection~$\dissection_\circ$, the quiver~$\overline{\quiver}(\dissection_\circ)$ is a shortcut quiver of the quiver with relations of a cluster tilted algebra of type~$A$.
+\end{example}
+
+The following statement is an application of Theorem~\ref{thm:mainAlgThm} to gentle algebras.
 
 \begin{theorem}
 \label{thm:contractVertices}
-For any quiver with relations~$\quiver$ and any subset~$J$ of vertices of~$\quiver$, the $2$-term silting object~$\siltingComplex(\quiver/J)$ for the shortcut quiver~$\quiver/J$ is isomorphic to the subcomplex of the $2$-term silting object~$\siltingComplex(\quiver)$ induced by $2$-term silting objects whose $\b{g}$-vector lie in the coordinate subspace spanned by vertices not in~$J$.
+For any gentle quiver with relations~$\overline{\quiver}$ and any subset~$J$ of vertices of~$\overline{\quiver}$, the $2$-term silting complex~$\siltingComplex(\overline{\quiver}_J)$ for the shortcut quiver~$\overline{\quiver}_J$ is isomorphic to the subcomplex of the $2$-term silting complex~$\siltingComplex(\overline{\quiver})$ induced by $2$-term silting objects whose $\b{g}$-vector lie in the coordinate subspace spanned by vertices not in~$J$.
 \end{theorem}
 
 Combining Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices} together with Example~\ref{exm:associahedron} proves Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex}.
 
-We conclude with a geometric interpretation of the common phenomenon described in Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Concluding remarks}
+
+\begin{remark}
+There is a geometric interpretation of the common phenomenon described in Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices}.
 For a $\dissection_\circ$-accordion dissection~$\dissection_\bullet$, denote by~$\R_{\ge0}\,\gvector{\dissection_\circ}{\dissection_\bullet}$ the polyhedral cone generated by the set of $\b{g}$-vectors~$\gvector{\dissection_\circ}{\dissection_\bullet} \eqdef \set{\gvector{\dissection_\circ}{\delta_\bullet}}{\delta_\bullet \in \dissection_\bullet}$. The collection~$\gvectorFan$ of cones~$\R_{\ge0}\gvector{\dissection_\circ}{\dissection_\bullet}$ for all $\dissection_\circ$-accordion dissections~$\dissection_\bullet$
 %\[
 %\gvectorFan \eqdef \set{\R_{\ge0}\gvector{\dissection_\circ}{\dissection_\bullet}}{\text{$\dissection_\bullet$ any $\dissection_\circ$-accordion dissection}}
@@ -542,10 +551,22 @@ This is often referred to as the \defn{sign-coherence property} of $\b{g}$-vecto
 It implies that for any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, the section of~$\gvectorFan[\dissection_\circ']$ with the coordinate subspace~$\R^{\dissection_\circ}$ is a subfan~$\gvectorFan[\dissection_\circ']$.
 The content of Theorem~\ref{thm:contractDiagonals} is that this subfan is the $\b{g}$-vector fan~$\gvectorFan$.
 A similar statement holds for Theorem~\ref{thm:contractVertices}.
+\end{remark}
+
+\begin{remark}
+In the theory of cluster algebras, a standard operation consists of freezing a subset of the initial cluster.
+This corresponds to taking a section of the $\b{d}$-vector fan by a coordinate subspace.
+To the best of our knowledge, the same operation on the $\b{g}$-vector fan studied in this note was not considered before in the literature.
+\end{remark}
+
+\begin{remark}
+Simple-minded collections
+\end{remark}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section*{Acknoledgements}
+\section*{Acknowledgements}
 
 We are grateful to F.~Chapoton for pointing out to us the similarity between the two pictures of \fref{fig:accordiohedron} which gave us the motivation for the present note.
 
