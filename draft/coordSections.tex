@@ -15,22 +15,22 @@
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\title[Geometric realizations of the accordion complex of a dissection]{Geometric realizations of the \\ accordion complex of a dissection}
+\title{A $\tau$-tilting approach to dissections of polygons}
 
 \thanks{The first two authors are partially supported by the French ANR grant SC3A~(15\,CE40\,0004\,01).}
 
 \author{Vincent Pilaud}
-\address[Vincent Pilaud]{CNRS \& LIX, \'Ecole Polytechnique, Palaiseau}
+\address[Vincent Pilaud]{\newline\indent CNRS \& LIX, \'Ecole Polytechnique, Palaiseau}
 \email{vincent.pilaud@lix.polytechnique.fr}
 \urladdr{\url{http://www.lix.polytechnique.fr/~pilaud/}}
 
 \author{Pierre-Guy Plamondon}
-\address[Pierre-Guy Plamondon]{Laboratoire de Math\'ematiques d?Orsay, Universit\'e Paris-Sud, CNRS, Universit\'e Paris-Saclay}
+\address[Pierre-Guy Plamondon]{\newline\indent Laboratoire de Math\'ematiques d'Orsay, \newline\indent Universit\'e Paris-Sud, CNRS, Universit\'e Paris-Saclay}
 \email{pierre-guy.plamondon@math.u-psud.fr}
 \urladdr{\url{https://www.math.u-psud.fr/~plamondon/}}
 
 \author{Salvatore Stella}
-\address[Salvatore Stella]{University of Haifa}
+\address[Salvatore Stella]{\newline\indent University of Haifa}
 \email{stella@mat.uniroma1.it}
 \urladdr{\url{http://www1.mat.uniroma1.it/people/stella/}}
 
@@ -219,16 +219,13 @@
 \begin{document}
 
 \begin{abstract}
-%Consider $2n$ points on the unit circle and a reference dissection~$\dissection_\circ$ of the convex hull of the odd points. The accordion complex of~$\dissection_\circ$ is the simplicial complex of non-crossing subsets of the diagonals with even endpoints that cross an accordion of the dissection~$\dissection_\circ$. In particular, this complex is an associahedron when~$\dissection_\circ$ is a triangulation and a Stokes complex when~$\dissection_\circ$ is a quadrangulation. In this paper, we provide geometric realizations (by polytopes and fans) of the accordion complex of any reference dissection~$\dissection_\circ$, generalizing known constructions arising from cluster algebras.
-%
-%\medskip
-%\noindent
-%\textsc{keywords.} Permutahedra $\cdot$ Zonotopes $\cdot$ Associahedra $\cdot$ $\b{g}$-, $\b{c}$- and $\b{d}$-vectors.
+We show that any accordion complex associated to a dissection of a polygon is isomorphic to the support $\tau$-tilting simplicial complex of an explicit finite dimensional algebra.
+To this end, we prove a property of certain induced subcomplexes of support $\tau$-tilting simplicial complexes of finite dimensional algebras.
 \end{abstract}
 
-%\vspace*{-1cm}
-
+\vspace*{-1cm}
 \maketitle{}
+\vspace*{-.5cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -278,6 +275,7 @@ The support $\tau$-tilting complex of~$e_J \Lambda e_J$ is isomorphic to the sub
 \section{Recollections on $\tau$-tilting theory}
 \label{sec:recollections}
 
+\enlargethispage{.2cm}
 The theory of $\tau$-tilting modules was introduced in~\cite{AdachiIyamaReiten}, and we mainly follow this source.
 Let $k$ be an algebraically closed field, and let $\Lambda$ be a basic finite-dimensional $k$-algebra, 
 and let $\{e_1, \dots, e_n\}$ be a complete set of pairwise orthogonal idempotents in $\Lambda$.
@@ -359,7 +357,7 @@ The map $(M,P) \mapsto (P_1^M\to P_0^M) \oplus (P\to 0)$ induces an isomorphism 
 
 \subsection{The $\b{g}$-vector of a $2$-term object}
 
-The results of this paper rely on the following definition.
+The results of this note rely on the following definition.
 
 \begin{definition}
  Let $P$ be a $2$-term object in $\cpx(\Lambda)$. 
@@ -489,7 +487,7 @@ The \defn{$\b{g}$-vector} of~$\delta_\bullet$ with respect to~$\dissection_\circ
 \label{exm:associahedron}
 When the reference dissection~$\dissection_\circ$ is a triangulation of~$\polygon_\circ$, any diagonal of~$\polygon_\bullet$ is a $\dissection_\circ$-accordion diagonal.
 The $\dissection_\circ$-accordion complex is thus an $n$-dimensional associahedron (of type~$A$), where~$n = m-3$.
-In this case, it is known~\cite{??} that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting object of the quiver~$\overline{\quiver}(\dissection_\circ)$ of the triangulation~$\dissection_\circ$ (see Section~\ref{sec:PGP}~for~definitions).
+In this case, it is known~\cite{??} that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting object of the quiver~$\overline{\quiver}(\dissection_\circ)$ of the triangulation~$\dissection_\circ$.
 The isomorphism sends a diagonal of~$\polygon_\bullet$ to the $2$-term silting object with the same $\b{g}$-vector.
 See \fref{fig:associahedron} for an illustration.
 \end{example}
@@ -519,7 +517,7 @@ For any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, t
 
 Let~$\overline{\quiver} = (\quiver, I)$ be any gentle quiver with relations~\cite{ButlerRingel} and~$J$ be any subset of vertices of~$\overline{\quiver}$.
 We call \defn{shortcut quiver} the quiver with relations~$\overline{\quiver}_J = (\quiver_J, I_J)$ whose vertices are the elements of~$J$, whose arrows are the paths in~$\overline{\quiver}$ with endpoints in~$J$ but no internal vertex in~$J$, and whose relations are inherited from those of~$\overline{\quiver}$.
-Then the algebra~$k\quiver_J/I_J$ is gentle and is isomorphic to the algebra~$e_J (k\quiver/I) e_J$.
+Then the algebra~$k\quiver_J/I_J$ is gentle and is isomorphic to the algebra~$e_J (k\quiver/I) \, e_J$.
 
 \begin{example}
 Quivers of dissections are shortcut quivers: if~$\dissection_\circ \subset \dissection_\circ'$, then~${\overline{\quiver}(\dissection_\circ) = \overline{\quiver}(\dissection_\circ')_{\dissection_\circ}}$.
@@ -530,7 +528,7 @@ The following statement is an application of Theorem~\ref{thm:mainAlgThm} to gen
 
 \begin{theorem}
 \label{thm:contractVertices}
-For any gentle quiver with relations~$\overline{\quiver}$ and any subset~$J$ of vertices of~$\overline{\quiver}$, the $2$-term silting complex~$\siltingComplex(\overline{\quiver}_J)$ for the shortcut quiver~$\overline{\quiver}_J$ is isomorphic to the subcomplex of the $2$-term silting complex~$\siltingComplex(\overline{\quiver})$ induced by $2$-term silting objects whose $\b{g}$-vector lie in the coordinate subspace spanned by vertices not in~$J$.
+For any gentle quiver with relations~$\overline{\quiver}$ and any subset~$J$ of vertices of~$\overline{\quiver}$, the $2$-term silting complex~$\siltingComplex(\overline{\quiver}_J)$ for the shortcut quiver~$\overline{\quiver}_J$ is isomorphic to the subcomplex of the $2$-term silting complex~$\siltingComplex(\overline{\quiver})$ induced by $2$-term silting objects whose $\b{g}$-vector lie in the coordinate subspace spanned by vertices in~$J$.
 \end{theorem}
 
 Combining Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices} together with Example~\ref{exm:associahedron} proves Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex}.
@@ -560,7 +558,8 @@ To the best of our knowledge, the same operation on the $\b{g}$-vector fan studi
 \end{remark}
 
 \begin{remark}
-Simple-minded collections
+The connection between representation theory and accordion complexes was already considered by A.~Garver and T.~McConville in~\cite[Sect.~8]{GarverMcConville}.
+However, their approach deals with $\b{c}$-vectors and simple-minded collections while our approach deals with $\b{g}$-vectors and silting objects.
 \end{remark}
 
 
@@ -568,12 +567,14 @@ Simple-minded collections
 
 \section*{Acknowledgements}
 
-We are grateful to F.~Chapoton for pointing out to us the similarity between the two pictures of \fref{fig:accordiohedron} which gave us the motivation for the present note.
+We are grateful to F.~Chapoton for pointing out to us the isomorphism between the two graphs of \fref{fig:accordiohedron} which gave us the motivation for the present note.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \bibliographystyle{alpha}
 \bibliography{coordSections}
 \label{sec:biblio}
+
+\newpage
 
 \end{document}
