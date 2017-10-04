@@ -17,7 +17,7 @@
 
 \title[Geometric realizations of the accordion complex of a dissection]{Geometric realizations of the \\ accordion complex of a dissection}
 
-\thanks{Partially supported by the French ANR grant SC3A~(15\,CE40\,0004\,01).}
+\thanks{The first two authors are partially supported by the French ANR grant SC3A~(15\,CE40\,0004\,01).}
 
 \author{Vincent Pilaud}
 \address[Vincent Pilaud]{CNRS \& LIX, \'Ecole Polytechnique, Palaiseau}
@@ -25,7 +25,7 @@
 \urladdr{\url{http://www.lix.polytechnique.fr/~pilaud/}}
 
 \author{Pierre-Guy Plamondon}
-\address[Pierre-Guy Plamondon]{Universit\'e de Paris Sud XI}
+\address[Pierre-Guy Plamondon]{Laboratoire de Math\'ematiques d?Orsay, Universit\'e Paris-Sud, CNRS, Universit\'e Paris-Saclay}
 \email{pierre-guy.plamondon@math.u-psud.fr}
 \urladdr{\url{https://www.math.u-psud.fr/~plamondon/}}
 
@@ -124,7 +124,7 @@
 
 % specific to accordion complex
 % accordion complex, lattice, flip graph
-\newcommand{\acco}{\mathrm{acco}} % accordion complex of a dissection
+\newcommand{\accordionComplex}{\mathrm{acco}} % accordion complex of a dissection
 % dissections
 \newcommand{\polygon}{\mathrm{P}} % polygon
 \newcommand{\triangulation}{\mathrm{T}} % triangulation
@@ -203,6 +203,8 @@
 \newcommand{\stau}{\operatorname{s} \! \tau \! \operatorname{-tilt}}
 \newcommand{\cpx}{2 \! \operatorname{-cpx}}
 \newcommand{\silt}{2 \! \operatorname{-silt}}
+\newcommand{\siltingComplex}{\mathcal{SC}}
+\newcommand{\tiltingComplex}{\tau\mathcal{C}}
 \newcommand{\MOD}{\mbox{{\rm mod \!}}}
 \newcommand{\proj}{\operatorname{{\rm proj }}}
 \newcommand{\Hom}[1]{\operatorname{{\rm Hom}}_{#1}}
@@ -233,12 +235,12 @@
 \section{Introduction}
 
 The theory of cluster algebras gives rise to several interpretations of associahedra~\mbox{\cite{Tamari, Stasheff}}. \fref{fig:associahedron} shows interpretations of the rank~$3$ associahedron as the exchange graph of triangulations of a hexagon and as the exchange graph of support $\tau$-tilting modules over the cluster tilted algebra whose quiver with relations is as depicted. 
-This follows from results that have been referred to as ``additive categorification of cluster algebras'', and that were initiated in part in \cite{BMRRT}.
+This follows from results that have been referred to as ``additive categorification of cluster algebras'', and that were initiated in part in \cite{CalderoChapotonSchiffler, BuanMarshReinekeReitenTodorov}.
 
 \begin{figure}
 	\capstart
 	\centerline{\associahedronAccordionTikz{}\associahedronSiltingTikz{}}
-	\caption{The exchange graph on triangulations of a hexagon (left) and the exchange graph on support $\tau$-tilting modules of the quiver with relations~$\quiver$ (right).}
+	\caption{The exchange graph on triangulations of a hexagon (left) and the exchange graph on support $\tau$-tilting modules of the quiver with relations~$\overline{\quiver}$ (right).}
 	\label{fig:associahedron}
 \end{figure}
 
@@ -247,7 +249,7 @@ F.~Chapoton observed a similar isomorphism between the exchange graphs of certai
 \begin{figure}
 	\capstart
 	\centerline{\accordiohedronAccordionTikz{}\accordiohedronSiltingTikz{}}
-	\caption{The $\dissection_\circ$-accordion complex of the dissection~$\dissection_\circ$ of \fref{fig:exmAccordionDissections} (left) and the $2$-term silting complex of the quiver~$\quiver(\dissection_\circ)$ (right).}
+	\caption{The $\dissection_\circ$-accordion complex of the dissection~$\dissection_\circ$ of \fref{fig:exmAccordionDissections} (left) and the $2$-term silting complex of the quiver~$\overline{\quiver}(\dissection_\circ)$ (right).}
 	\label{fig:accordiohedron}
 \end{figure}
 
@@ -276,12 +278,12 @@ The support $\tau$-tilting complex of~$e_J \Lambda e_J$ is isomorphic to the sub
 \section{Recollections on $\tau$-tilting theory}
 \label{sec:recollections}
 
-The theory of $\tau$-tilting modules was introduced in \cite{AIR}, and we mainly follow this source.
+The theory of $\tau$-tilting modules was introduced in~\cite{AdachiIyamaReiten}, and we mainly follow this source.
 Let $k$ be an algebraically closed field, and let $\Lambda$ be a basic finite-dimensional $k$-algebra, 
-and let $\{e_1, \ldots, e_n\}$ be a complete set of pairwise orthogonal idempotents in $\Lambda$.
+and let $\{e_1, \dots, e_n\}$ be a complete set of pairwise orthogonal idempotents in $\Lambda$.
 Denote by $\MOD \Lambda$ the category of finite-dimensional $\Lambda$-modules, 
 and by $\proj \Lambda$ its full subcategory of projective modules.
-We denote by $\tau$ the Auslander-Reiten translation of $\MOD \Lambda$ (see, for instance, \cite[Chapter IV]{ASS}).
+We denote by $\tau$ the Auslander-Reiten translation of $\MOD \Lambda$ (see, for instance, \cite[Chapter IV]{AssemSimsonSkowronski}).
 For any $\Lambda$-module $M$, we denote by $|M|$ the number of pairwise non-isomorphic direct summands appearing 
 in any decomposition of $M$ into indecomposable modules.
 
@@ -289,7 +291,7 @@ in any decomposition of $M$ into indecomposable modules.
 
 \subsection{Support $\tau$-tilting pairs}
 
-Following \cite[Definition 0.1]{AIR}, we say that a $\Lambda$-module $M$ is 
+Following~\cite[Def.~0.1]{AdachiIyamaReiten}, we say that a $\Lambda$-module $M$ is 
 \begin{itemize}
  \item \defn{$\tau$-rigid} if $\Hom{\Lambda}(M, \tau M) = 0$;
  \item \defn{$\tau$-tilting} if it is $\tau$-rigid and $|M|=|\Lambda|$;
@@ -299,7 +301,7 @@ Following \cite[Definition 0.1]{AIR}, we say that a $\Lambda$-module $M$ is
 Support $\tau$-tilting modules always exist: $\Lambda$ itself and the zero module are two examples.
 
 It is useful to keep track of the idempotents in the annihilator of a support $\tau$-tilting module.
-For this reason, we will follow \cite[Definition 0.3]{AIR} and call a pair $(M,P)$, with $M\in \MOD \Lambda$ and $P\in \proj \Lambda$, a
+For this reason, we will follow~\cite[Def.~0.3]{AdachiIyamaReiten} and call a pair $(M,P)$, with $M\in \MOD \Lambda$ and $P\in \proj \Lambda$, a
 \begin{itemize}
  \item \defn{$\tau$-rigid pair} if $M$ is $\tau$-rigid and $\Hom{\Lambda}(P,M) = 0$;
  \item \defn{support $\tau$-tilting pair} if it is a $\tau$-rigid pair and $|M| + |P| = |\Lambda|$;
@@ -308,75 +310,77 @@ For this reason, we will follow \cite[Definition 0.3]{AIR} and call a pair $(M,P
 We will say that the pair $(M,P)$ is basic if both $M$ and $P$ are basic $\Lambda$-modules.  
 We define direct sums of pairs componentwise.
 
-One of the main theorems of \cite{AIR} is the following.
+One of the main theorems of~\cite{AdachiIyamaReiten} is the following.
 
-\begin{theorem}[Theorem 0.4 of \cite{AIR}]
+\begin{theorem}[{\cite[Thm.~0.4]{AdachiIyamaReiten}}]
  A basic almost complete support $\tau$-tilting pair is a direct summand of exactly two basic support $\tau$-tilting pairs.
 \end{theorem}
 
 \begin{definition}
- The \defn{exchange graph} of $\Lambda$, denoted by $\stau(\Lambda)$, is the graph whose vertices are isomorphism classes of basic support
- $\tau$-tilting pairs, and where two vertices are joined by an edge whenever the corresponding support $\tau$-tilting pairs differ
- by exactly one direct summand.
+The \defn{support $\tau$-tilting complex}~$\tiltingComplex(\Lambda)$ of~$\Lambda$ is the simplicial complex whose vertices are the isomorphism classes of indecomposable $\tau$-rigid pairs and whose faces are sets of $\tau$-rigid pairs whose direct sum is rigid.
+The \defn{exchange graph}~$\stau(\Lambda)$ is the dual graph of~$\tiltingComplex(\Lambda)$, \ie the graph whose vertices are isomorphism classes of basic support $\tau$-tilting pairs, and where two vertices are joined by an edge whenever the corresponding support $\tau$-tilting pairs differ by exactly one direct summand.
 \end{definition}
 
 %%%%
 
-\subsection{$2$-term silting complexes}
-The study of support $\tau$-tilting pairs turns out to be equivalent to that of another class of objects: $2$-term silting complexes \cite[Section 3]{AIR}.
+\subsection{$2$-term silting objects}
+
+The study of support $\tau$-tilting pairs turns out to be equivalent to that of another class of objects: $2$-term silting objects~\cite[Sect.~3]{AdachiIyamaReiten}.
 Let $K^b(\proj \Lambda)$ be the homotopy category of bounded complexes of projective $\Lambda$-modules. 
-Let $\cpx(\Lambda)$ be the full subcategory of $K^b(\proj \Lambda)$ consisting of \defn{$2$-term complexes}, that is, complexes
+Let $\cpx(\Lambda)$ be the full subcategory of $K^b(\proj \Lambda)$ consisting of \defn{$2$-term objects}, that is, complexes
 \[
- P = \ldots \to P_{m+1} \to P_m \to P_{m-1} \to \ldots
+ P = \cdots \to P_{m+1} \to P_m \to P_{m-1} \to \cdots
 \]
 such that $P_m$ is zero unless $m\in \{0,1\}$.  
 We will write $P_1\to P_0$ to denote the complex
 \[
- \ldots \to 0 \to P_1 \to P_0 \to 0 \to \ldots
+\cdots \to 0 \to P_1 \to P_0 \to 0 \to \cdots
 \]
-A $2$-term complex $P$ is \defn{rigid} if $\Hom{K^b}(P, P[1]) = 0$.  It is \defn{silting} if
+A $2$-term object $P$ is \defn{rigid} if $\Hom{K^b}(P, P[1]) = 0$.  It is \defn{silting} if
 \begin{itemize}
  \item it is rigid, and 
  \item $|P| = |\Lambda|$.
 \end{itemize}
 This is a special case of a more general definition of silting objects, see \cite{}.
-Examples of $2$-term silting complexes include $0\to \Lambda$ and $\Lambda \to 0$.
+Examples of $2$-term silting objects include $0\to \Lambda$ and $\Lambda \to 0$.
 
 \begin{definition}
- Define $\silt(\Lambda)$ to be the graph whose vertices are isomorphism classes of basic $2$-term silting complexes in $K^b(\proj \Lambda)$,
- and where two vertices are joined by an edge whenever the corresponding complexes differ by exactly one direct summand.
+The \defn{$2$-term silting complex}~$\siltingComplex(\Lambda)$ of~$\Lambda$ is the simplicial complex whose vertices are isomorphism classes of indecomposable rigid $2$-term objects in $K^b(\proj \Lambda)$ and whose faces are sets of such objects whose direct sum is rigid.
+The \defn{exchange graph}~$\silt(\Lambda)$ is the dual graph of~$\siltingComplex(\Lambda)$, \ie the graph whose vertices are isomorphism classes of basic $2$-term silting objects in $K^b(\proj \Lambda)$, and where two vertices are joined by an edge whenever the corresponding objects differ by exactly one direct summand.
 \end{definition}
 
 For any $\Lambda$-module $M$, denote by $P_1^M\to P_0^M$ a minimal projective presentation of $M$.
 
-\begin{theorem}[Theorem 3.2 of \cite{AIR}]
- The assignment $(M,P) \mapsto (P_1^M\to P_0^M) \oplus (P\to 0)$ induces an isomorphism of graphs $\stau(\Lambda) \cong \silt(\Lambda)$.
+\begin{theorem}[{\cite[Thm.~3.2]{AdachiIyamaReiten}}]
+The map $(M,P) \mapsto (P_1^M\to P_0^M) \oplus (P\to 0)$ induces an isomorphism of simplicial complexes~$\tiltingComplex(\Lambda) \cong \siltingComplex(\Lambda)$, and thus of exchange graphs~${\stau(\Lambda) \cong \silt(\Lambda)}$.
 \end{theorem}
 
 %%%%
 
-\subsection{The $\b{g}$-vector of a $2$-term complex}
+\subsection{The $\b{g}$-vector of a $2$-term object}
+
 The results of this paper rely on the following definition.
 
 \begin{definition}
- Let $P$ be a $2$-term complex in $\cpx(\Lambda)$. 
+ Let $P$ be a $2$-term object in $\cpx(\Lambda)$. 
  The \defn{$\b{g}$-vector} of $P$, denoted by $\b{g}(P)$, is the class of $P$ in the Grothendieck group $K_0\big(K^b(\proj \Lambda)\big)$
 \end{definition}
 We will usually denote $\b{g}$-vectors as integer vectors by using the basis of the abelian group $K_0\big(K^b(\proj \Lambda)\big)$
-given by the classes of the indecomposable projective modules $\Lambda e_1, \ldots, \Lambda e_n$ concentrated in degree $0$.
-Thus, if $P$ is the $2$-term complex
+given by the classes of the indecomposable projective modules $\Lambda e_1, \dots, \Lambda e_n$ concentrated in degree $0$.
+Thus, if $P$ is the $2$-term object
 \[
  \bigoplus_{i=1}^n (\Lambda e_i)^{\oplus b_i} \xrightarrow{} \bigoplus_{i=1}^n (\Lambda e_i)^{\oplus a_i},
 \]
 then its $\b{g}$-vector is $\b{g}(P) = (a_i - b_i)_{i=1}^n$.
 
-Non-isomorphic $2$-term complexes may have the same $\b{g}$-vector.  This is not true for rigid $2$-term complexes.
+Non-isomorphic $2$-term objects may have the same $\b{g}$-vector.  This is not true for rigid $2$-term objects.
 
-\begin{theorem}[\cite{}]
- \begin{enumerate}
-  \item Let $P$ and $Q$ be two rigid $2$-term complexes.  If $\b{g}(P) = \b{g}(Q)$, then $P$ and $Q$ are isomorphic.
+\begin{theorem}[{\cite[Sec.~2.3 \& 2.4]{DehyKeller}}]
+Let $P$ and $Q$ be two rigid $2$-term objects. 
+\begin{enumerate}[(i)]
+  \item If ${\b{g}(P) = \b{g}(Q)}$, then $P$ and $Q$ are isomorphic.
   
-  \item Let $P$ be a rigid $2$-term complex.  Then $P$ is isomorphic to a complex of the form $(P_1\to P_0) \oplus (Q\stackrel{id_Q}{\to} Q)$,
+  \item The object $P$ is isomorphic to an object of the form $(P_1\to P_0) \oplus (Q\stackrel{id_Q}{\to} Q)$,
     where $P_1$ and $P_0$ do not have non-zero direct summands in common.
  \end{enumerate}
 \end{theorem}
@@ -387,30 +391,31 @@ Note that $(Q\stackrel{id_Q}{\to} Q)$ is isomorphic to zero in $K^b(\proj \Lambd
 \section{Main algebraic result}
 
 We use the same notations as in the previous section.  In particular, $\Lambda$ is a basic finite-dimensional $k$-algebra
-with complete set of pairwise orthogonal idempotents $\{e_1, \ldots, e_n\}$.
+with complete set of pairwise orthogonal idempotents $\{e_1, \dots, e_n\}$.
 
-Let $J$ be a subset of $\{1, \ldots, n\}$.  
-We will study $2$-term complexes that only involve the indecomposable projective modules $\Lambda e_j$ with $j\in J$.
+Let $J$ be a subset of $\{1, \dots, n\}$.  
+We will study $2$-term objects that only involve the indecomposable projective modules $\Lambda e_j$ with $j\in J$.
 
 \begin{definition}
- Let $\cpx_J(\Lambda)$ be the full subcategory of $\cpx(\Lambda)$ whose objects are the $2$-term complexes $P_1\to P_0$
- such that all the indecomposable direct summands of $P_1$ and $P_0$ have the form $\Lambda e_j$ with $j\in J$.
+Let $\cpx_J(\Lambda)$ be the full subcategory of $\cpx(\Lambda)$ whose objects are the $2$-term objects $P_1\to P_0$ such that all the indecomposable direct summands of $P_1$ and $P_0$ have the form $\Lambda e_j$ with $j\in J$.
 \end{definition}
 
 Our main interest will lie in the ``maximal'' rigid objects in $\cpx_J(\Lambda)$.
 
 \begin{definition}
- Let $\silt_J(\Lambda)$ be the graph whose vertices are isomorphism classes of basic objects $T$ in $\cpx_J(\Lambda)$ satisfying
-   \begin{itemize}
-    \item $T$ is rigid;
-    \item if $T'\in \cpx_J(\Lambda)$ is such that $T\oplus T'$ is rigid, then $T'$ is a direct sum of direct summands of $T$.
-   \end{itemize}
- Two vertices are joined by an edge whenever the corresponding objects differ by exactly one indecomposable direct summand.
+Let~$\siltingComplex_J(\Lambda)$ be the subcomplex of~$\siltingComplex(\Lambda)$ \defn{induced} by~$J$, that is, the subcomplex whose vertices are objects in $\cpx_J(\Lambda)$.
+Let $\silt_J(\Lambda)$ be the dual graph of~$\siltingComplex_J(\Lambda)$.
+Its vertices are isomorphism classes of basic objects $T$ in $\cpx_J(\Lambda)$ satisfying
+\begin{itemize}
+\item $T$ is rigid;
+\item if $T'\in \cpx_J(\Lambda)$ is such that $T\oplus T'$ is rigid, then $T'$ is a direct sum of direct summands of $T$.
+\end{itemize}
+Two vertices are joined by an edge whenever the corresponding objects differ by exactly one indecomposable direct summand.
 \end{definition}
 
 In other words, the vertices of $\silt_J(\Lambda)$ correspond to basic rigid objects whose $\b{g}$-vectors have zero coefficients in entries 
 corresponding to elements in $J$, and which are maximal for this property.
-In this sense, $\silt_J(\Lambda)$ is a representation-theoretic analogue of the INSERT NAME AND REFERENCE HERE.
+In this sense, $\siltingComplex_J(\Lambda)$ is a representation-theoretic analogue of the accordion complex~\cite{Chapoton-quadrangulations, GarverMcConville, MannevillePilaud-accordion}.
 This is the main motivation for the introduction of this object.
 
 Let $e_J = \sum_{j\in J} e_j$, and consider the algebra $e_J \Lambda e_J$.  
@@ -423,14 +428,15 @@ the indecomposable modules $\Lambda e_j$, with $j\in J$.
  In particular, the categories $K^b(\proj_J(\Lambda))$ and $K^b(\proj(\Lambda))$ are equivalent.
 \end{lemma}
 
-This has the immediate following consequence:
+This has the immediate following consequence.
 
 \begin{theorem}
- The graphs $\silt_J(\Lambda)$ and $\silt(e_J \Lambda e_J)$ are isomorphic.
+The simplicial complexes~$\siltingComplex_J(\Lambda)$ and~$\siltingComplex(e_J \Lambda e_J)$ are isomorphic.
+In particular, their dual graphs $\silt_J(\Lambda)$ and $\silt(e_J \Lambda e_J)$ are isomorphic.
 \end{theorem}
 
 \begin{corollary}
- The graph $\silt_J(\Lambda)$ is $|J|$-regular.
+The simplicial complex~$\siltingComplex_J(\Lambda)$ is a pseudomanifold of dimension~$|J|-1$. In particular, its dual graph~$\silt_J(\Lambda)$ is $|J|$-regular.
 \end{corollary}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -443,7 +449,7 @@ We call \defn{diagonals} of~$\polygon$ the segments connecting two non-consecuti
 A \defn{dissection} of~$\polygon$ is a set~$\dissection$ of non-crossing diagonals.
 It dissects the polygon into \defn{cells}.
 %We denote by~$Q(\dissection)$ the quiver with relations having a vertex for each diagonal of~$\dissection$, an arrow connecting any two counterclockwise consecutive edges of a cell of~$\dissection$, and a relation between any two arrows connecting three counterclockwise consecutive edges of a cell~of~$\dissection$.
-We denote by~$\quiver(\dissection)$ the quiver with relations whose vertices are the diagonals of~$\dissection$, whose arrows connect any two counterclockwise consecutive edges of a cell of~$\dissection$, and whose relations are given by triples of counterclockwise consecutive edges of a cell of~$\dissection$.
+We denote by~$\overline{\quiver}(\dissection)$ the quiver with relations whose vertices are the diagonals of~$\dissection$, whose arrows connect any two counterclockwise consecutive edges of a cell of~$\dissection$, and whose relations are given by triples of counterclockwise consecutive edges of a cell of~$\dissection$.
 See \fref{fig:exmAccordionDissections} for an example.
 
 We now consider $2m$ points on the unit circle alternately colored black and white, and let~$\polygon_\circ$ (resp.~$\polygon_\bullet$) denote the convex hull of the white (resp.~black) points.
@@ -452,13 +458,13 @@ A diagonal~$\delta_\bullet$ of~$\polygon_\bullet$ is a \defn{$\dissection_\circ$
 In other words the diagonals of~$\dissection_\circ$ crossed by~$\delta_\bullet$ together with the two boundary edges of~$\polygon_\circ$ crossed by~$\delta_\bullet$ form an accordion.
 A \defn{$\dissection_\circ$-accordion dissection} is a set of non-crossing \mbox{$\dissection_\circ$-accordion} diagonals. 
 See \fref{fig:exmAccordionDissections} for an example.
-We call \defn{$\dissection_\circ$-accordion complex} the simplicial complex~$\acco(\dissection_\circ)$ of $\dissection_\circ$-accordion dissections.
+We call \defn{$\dissection_\circ$-accordion complex} the simplicial complex~$\accordionComplex(\dissection_\circ)$ of $\dissection_\circ$-accordion dissections.
 This complex appeared in recent works of F.~Chapoton~\cite{Chapoton-quadrangulations}, A.~Garver and T.~McConville~\cite{GarverMcConville}, and T.~Manneville and V.~Pilaud~\cite{MannevillePilaud-accordion}.
 
 \begin{figure}
 	\capstart
 	\centerline{\includegraphics[width=\textwidth]{exmAccordionDissections}}
-	\caption{A dissection~$\dissection_\circ$ with its quiver~$\quiver(\dissection_\circ)$ (left), a $\dissection_\circ$-accordion diagonal (middle) and a $\dissection_\circ$-accordion dissection (right).}
+	\caption{A dissection~$\dissection_\circ$ with its quiver~$\overline{\quiver}(\dissection_\circ)$ (left), a $\dissection_\circ$-accordion diagonal (middle) and a $\dissection_\circ$-accordion dissection (right).}
 	\label{fig:exmAccordionDissections}
 \end{figure}
 
@@ -483,8 +489,8 @@ The \defn{$\b{g}$-vector} of~$\delta_\bullet$ with respect to~$\dissection_\circ
 \label{exm:associahedron}
 When the reference dissection~$\dissection_\circ$ is a triangulation of~$\polygon_\circ$, any diagonal of~$\polygon_\bullet$ is a $\dissection_\circ$-accordion diagonal.
 The $\dissection_\circ$-accordion complex is thus an $n$-dimensional associahedron (of type~$A$), where~$n = m-3$.
-In this case, it is known~\cite{??} that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting complex of the quiver~$\quiver(\dissection_\circ)$ of the triangulation~$\dissection_\circ$ (see Section~\ref{sec:PGP}~for~definitions).
-The isomorphism sends a diagonal of~$\polygon_\bullet$ to the $2$-term projective complex with the same $\b{g}$-vector.
+In this case, it is known~\cite{??} that the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting object of the quiver~$\overline{\quiver}(\dissection_\circ)$ of the triangulation~$\dissection_\circ$ (see Section~\ref{sec:PGP}~for~definitions).
+The isomorphism sends a diagonal of~$\polygon_\bullet$ to the $2$-term silting object with the same $\b{g}$-vector.
 See \fref{fig:associahedron} for an illustration.
 \end{example}
 
@@ -492,10 +498,10 @@ The initial motivation of this note was to prove the following extension of Exam
 
 \begin{theorem}
 \label{thm:bijectionAccordionComplexSiltingComplex}
-For any reference dissection~$\dissection_\circ$, the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting complex of the quiver~$\quiver(\dissection_\circ)$.
+For any reference dissection~$\dissection_\circ$, the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting object of the quiver~$\overline{\quiver}(\dissection_\circ)$.
 \end{theorem}
 
-One possible approach to Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex} would be to provide an explicit bijective map between $\dissection_\circ$-accordion diagonals and $2$-term projective complexes for~$\quiver(\dissection_\circ)$.
+One possible approach to Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex} would be to provide an explicit bijective map between $\dissection_\circ$-accordion diagonals and $2$-term silting objects for~$\overline{\quiver}(\dissection_\circ)$.
 Such a map is easy to guess using $\b{g}$-vectors, but the proof that it is actually a bijection and that it preserves compatibility is intricated.
 This approach was developed in the more general context of non-kissing complexes of gentle quivers in~\cite{PaluPilaudPlamondon}.
 In this note, we use an alternative simpler strategy to obtain Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex}, understanding accordion complexes as certain subcomplexes of the associahedron.
@@ -508,24 +514,33 @@ This observation shows the following statement.
 \begin{theorem}[\cite{MannevillePilaud-accordion}]
 \label{thm:contractDiagonals}
 %Consider two dissections~$\dissection_\circ \subset \dissection_\circ'$. A $\dissection_\circ'$-accordion diagonal~$\delta_\bullet$ is also a $\dissection_\circ$-accordion diagonal if and only if ${\sign{\delta'_\circ}{\dissection_\circ}{\delta_\bullet}}$ vanishes for all~$\delta'_\circ \in \dissection_\circ' \ssm \dissection_\circ$.
-For any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, the accordion complex~$\acco(\dissection_\circ)$ is isomorphic to the subcomplex of~$\acco(\dissection_\circ')$ induced by $\dissection_\circ'$-accordion diagonals~$\delta_\bullet$ whose $\b{g}$-vector $\gvector{\dissection_\circ'}{\delta_\bullet}$ lie in the coordinate subspace spanned by elements in~$\dissection_\circ$.
+For any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, the accordion complex~$\accordionComplex(\dissection_\circ)$ is isomorphic to the subcomplex of~$\accordionComplex(\dissection_\circ')$ induced by $\dissection_\circ'$-accordion diagonals~$\delta_\bullet$ whose $\b{g}$-vector $\gvector{\dissection_\circ'}{\delta_\bullet}$ lie in the coordinate subspace spanned by elements in~$\dissection_\circ$.
 \end{theorem}
 
-Consider now any quiver with relations~$\quiver$ and any subset~$J$ of vertices of~$\quiver$.
-We call \defn{shortcut quiver} the quiver with relations~$\quiver/J$ whose vertices are the vertices of~$\quiver$ not in~$J$, whose arrows are the paths in~$\quiver$ with internal vertices in~$J$, and whose relations are inherited from those of~$\quiver$.
-For example, quivers of subdissections are shortcut quivers: if~$\dissection_\circ \subset \dissection_\circ'$, then~${\quiver(\dissection_\circ) = \quiver(\dissection_\circ')/(\dissection_\circ' \ssm \dissection_\circ)}$.
-The following statement is a reformulation of Theorem~\ref{thm:mainAlgThm} in terms of quivers.
-\vincent{Not really}
-%The main result of this note is the following statement.
+Let~$\overline{\quiver} = (\quiver, I)$ be any gentle quiver with relations~\cite{ButlerRingel} and~$J$ be any subset of vertices of~$\overline{\quiver}$.
+We call \defn{shortcut quiver} the quiver with relations~$\overline{\quiver}_J = (\quiver_J, I_J)$ whose vertices are the elements of~$J$, whose arrows are the paths in~$\overline{\quiver}$ with endpoints in~$J$ but no internal vertex in~$J$, and whose relations are inherited from those of~$\overline{\quiver}$.
+Then the algebra~$k\quiver_J/I_J$ is gentle and is isomorphic to the algebra~$e_J (k\quiver/I) e_J$.
+
+\begin{example}
+Quivers of dissections are shortcut quivers: if~$\dissection_\circ \subset \dissection_\circ'$, then~${\overline{\quiver}(\dissection_\circ) = \overline{\quiver}(\dissection_\circ')_{\dissection_\circ}}$.
+In particular, for any dissection~$\dissection_\circ$, the quiver~$\overline{\quiver}(\dissection_\circ)$ is a shortcut quiver of the quiver with relations of a cluster tilted algebra of type~$A$.
+\end{example}
+
+The following statement is an application of Theorem~\ref{thm:mainAlgThm} to gentle algebras.
 
 \begin{theorem}
 \label{thm:contractVertices}
-For any quiver with relations~$\quiver$ and any subset~$J$ of vertices of~$\quiver$, the $2$-term silting complex~$\silt(\quiver/J)$ for the shortcut quiver~$\quiver/J$ is isomorphic to the subcomplex of the $2$-term silting complex~$\silt(\quiver)$ induced by $2$-term projective complexes whose $\b{g}$-vector lie in the coordinate subspace spanned by vertices not in~$J$.
+For any gentle quiver with relations~$\overline{\quiver}$ and any subset~$J$ of vertices of~$\overline{\quiver}$, the $2$-term silting complex~$\siltingComplex(\overline{\quiver}_J)$ for the shortcut quiver~$\overline{\quiver}_J$ is isomorphic to the subcomplex of the $2$-term silting complex~$\siltingComplex(\overline{\quiver})$ induced by $2$-term silting objects whose $\b{g}$-vector lie in the coordinate subspace spanned by vertices not in~$J$.
 \end{theorem}
 
 Combining Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices} together with Example~\ref{exm:associahedron} proves Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex}.
 
-We conclude with a geometric interpretation of the common phenomenon described in Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices}.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Concluding remarks}
+
+\begin{remark}
+There is a geometric interpretation of the common phenomenon described in Theorems~\ref{thm:contractDiagonals} and~\ref{thm:contractVertices}.
 For a $\dissection_\circ$-accordion dissection~$\dissection_\bullet$, denote by~$\R_{\ge0}\,\gvector{\dissection_\circ}{\dissection_\bullet}$ the polyhedral cone generated by the set of $\b{g}$-vectors~$\gvector{\dissection_\circ}{\dissection_\bullet} \eqdef \set{\gvector{\dissection_\circ}{\delta_\bullet}}{\delta_\bullet \in \dissection_\bullet}$. The collection~$\gvectorFan$ of cones~$\R_{\ge0}\gvector{\dissection_\circ}{\dissection_\bullet}$ for all $\dissection_\circ$-accordion dissections~$\dissection_\bullet$
 %\[
 %\gvectorFan \eqdef \set{\R_{\ge0}\gvector{\dissection_\circ}{\dissection_\bullet}}{\text{$\dissection_\bullet$ any $\dissection_\circ$-accordion dissection}}
@@ -536,10 +551,22 @@ This is often referred to as the \defn{sign-coherence property} of $\b{g}$-vecto
 It implies that for any two nested dissections~$\dissection_\circ \subset \dissection_\circ'$, the section of~$\gvectorFan[\dissection_\circ']$ with the coordinate subspace~$\R^{\dissection_\circ}$ is a subfan~$\gvectorFan[\dissection_\circ']$.
 The content of Theorem~\ref{thm:contractDiagonals} is that this subfan is the $\b{g}$-vector fan~$\gvectorFan$.
 A similar statement holds for Theorem~\ref{thm:contractVertices}.
+\end{remark}
+
+\begin{remark}
+In the theory of cluster algebras, a standard operation consists of freezing a subset of the initial cluster.
+This corresponds to taking a section of the $\b{d}$-vector fan by a coordinate subspace.
+To the best of our knowledge, the same operation on the $\b{g}$-vector fan studied in this note was not considered before in the literature.
+\end{remark}
+
+\begin{remark}
+Simple-minded collections
+\end{remark}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section*{Acknoledgements}
+\section*{Acknowledgements}
 
 We are grateful to F.~Chapoton for pointing out to us the similarity between the two pictures of \fref{fig:accordiohedron} which gave us the motivation for the present note.
 
