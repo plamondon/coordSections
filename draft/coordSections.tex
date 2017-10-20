@@ -1,7 +1,33 @@
-\documentclass{amsart}
+\documentclass{compositio}
 
 \usepackage[T1]{fontenc}
-\usepackage{enumerate, amsmath, amsfonts, amssymb, amsthm, mathrsfs, wasysym, graphics, graphicx, xcolor, url, hyperref, hypcap,  shuffle, xargs, multicol, overpic, pdflscape, multirow, hvfloat, minibox, accents, array, xifthen, a4wide, ae, aecompl}
+\usepackage{enumerate}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{wasysym}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{url}
+\usepackage{hyperref}
+\usepackage{hypcap}
+\usepackage{shuffle}
+\usepackage{xargs}
+\usepackage{multicol}
+\usepackage{overpic}
+\usepackage{pdflscape}
+\usepackage{multirow}
+\usepackage{hvfloat}
+\usepackage{minibox}
+\usepackage{accents}
+\usepackage{array}
+\usepackage{xifthen}
+%\usepackage{a4wide}
+\usepackage{ae}
+\usepackage{aecompl}
 \usepackage{marginnote}
 \hypersetup{colorlinks=true, citecolor=darkblue, linkcolor=darkblue}
 \usepackage[all]{xy}
@@ -111,23 +137,24 @@
 
 \title{A $\tau$-tilting approach to dissections of polygons}
 
-\thanks{The first two authors are partially supported by the French ANR grant SC3A~(15\,CE40\,0004\,01).}
-
 \author{Vincent Pilaud}
-\address[Vincent Pilaud]{\newline\indent CNRS \& LIX, \'Ecole Polytechnique, Palaiseau}
 \email{vincent.pilaud@lix.polytechnique.fr}
-\urladdr{\url{http://www.lix.polytechnique.fr/~pilaud/}}
+\address[Vincent Pilaud]{CNRS \& LIX, \'Ecole Polytechnique, Palaiseau}
+%\urladdr{\url{http://www.lix.polytechnique.fr/~pilaud/}}
 
 \author{Pierre-Guy Plamondon}
-\address[Pierre-Guy Plamondon]{\newline\indent Laboratoire de Math\'ematiques d'Orsay, \newline\indent Universit\'e Paris-Sud, CNRS, Universit\'e Paris-Saclay}
 \email{pierre-guy.plamondon@math.u-psud.fr}
-\urladdr{\url{https://www.math.u-psud.fr/~plamondon/}}
+\address[Pierre-Guy Plamondon]{Laboratoire de Math\'ematiques d'Orsay, \newline\indent Universit\'e Paris-Sud, CNRS, Universit\'e Paris-Saclay}
+%\urladdr{\url{https://www.math.u-psud.fr/~plamondon/}}
 
 \author{Salvatore Stella}
-\address[Salvatore Stella]{\newline\indent University of Haifa}
 \email{stella@mat.uniroma1.it}
-\urladdr{\url{http://www1.mat.uniroma1.it/people/stella/}}
+\address[Salvatore Stella]{Department of Mathematics \& Department of Computer Science, \newline\indent University of Haifa, Haifa, Mount Carmel 31905, Israel}
+%\urladdr{\url{http://www1.mat.uniroma1.it/people/stella/}}
 
+\classification{16G10, 16G20, 05E10}
+\keywords{accordion complexes, $\tau$-tilting theory, finite dimensional algebras}
+\thanks{The first two authors are partially supported by the French ANR grant SC3A~(15\,CE40\,0004\,01).}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \begin{document}
@@ -260,7 +287,7 @@ Examples of $2$-term silting objects include $0\to \Lambda$ and $\Lambda \to 0$.
 
 \begin{definition}
 The \defn{$2$-term silting complex} of~$\Lambda$ is the simplicial complex~$\siltingComplex(\Lambda)$ whose vertices are isomorphism classes of indecomposable rigid $2$-term objects in $K^b(\proj \Lambda)$ and whose faces are sets of such objects whose direct sum is rigid.
-The \defn{exchange graph}~$\silt(\Lambda)$ is the dual graph of~$\siltingComplex(\Lambda)$, \ie the graph whose vertices are isomorphism classes of basic $2$-term silting objects in $K^b(\proj \Lambda)$, and where two vertices are joined by an edge whenever the corresponding objects differ by exactly one direct summand.
+The \defn{exchange graph}~$\silt(\Lambda)$ is the dual graph of~$\siltingComplex(\Lambda)$, \ie the graph whose vertices are isomorphism classes of basic $2$-term silting objects in~$K^b(\proj \Lambda)$, and where two vertices are joined by an edge whenever the corresponding objects differ by exactly one direct summand.
 \end{definition}
 
 For any $\Lambda$-module $M$, denote by $P_1^M\to P_0^M$ a minimal projective presentation of $M$.
@@ -279,8 +306,7 @@ The results of this note rely on the following definition.
  Let $\complexP$ be a $2$-term object in $\cpx(\Lambda)$. 
  The \defn{$\b{g}$-vector} of $\complexP$, denoted by $\b{g}(\complexP)$, is the class of $\complexP$ in the Grothendieck group $K_0\big(K^b(\proj \Lambda)\big)$.
 \end{definition}
-We will usually denote $\b{g}$-vectors as integer vectors by using the basis of the abelian group $K_0\big(K^b(\proj \Lambda)\big)$
-given by the classes of the indecomposable projective modules $\Lambda e_1, \dots, \Lambda e_n$ concentrated in degree $0$.
+We will usually denote $\b{g}$-vectors as integer vectors by using the basis of the abelian group $K_0\big(K^b(\proj \Lambda)\big)$ given by the classes of the indecomposable projective modules $\Lambda e_1, \dots, \Lambda e_n$ concentrated in degree $0$.
 Thus, if $\complexP$ is the $2$-term object
 \[
  \bigoplus_{i \in [n]} (\Lambda e_i)^{\oplus b_i} \xrightarrow{} \bigoplus_{i \in [n]} (\Lambda e_i)^{\oplus a_i},
@@ -311,7 +337,7 @@ Let $J$ be a subset of $[n]$.
 We will study $2$-term objects that only involve the indecomposable projective modules $\Lambda e_j$ with $j\in J$.
 
 \begin{definition}
-Let $\cpx_J(\Lambda)$ be the full subcategory of $\cpx(\Lambda)$ whose objects are the $2$-term objects $P_1\to P_0$ such that all the indecomposable direct summands of $P_1$ and $P_0$ have the form $\Lambda e_j$ with $j\in J$.
+Let $\cpx_J(\Lambda)$ be the full subcategory of $\cpx(\Lambda)$ whose objects are the $2$-term objects $P_1\to P_0$ such that all the indecomposable direct summands of $P_1$ and $P_0$ have the form~$\Lambda e_j$ with $j\in J$.
 \end{definition}
 
 Our main interest will lie in the rigid objects in $\cpx_J(\Lambda)$.
@@ -332,8 +358,9 @@ In this sense, $\siltingComplex_J(\Lambda)$ is a representation-theoretic analog
 This is the main motivation for the introduction of this object.
 
 Let $e_J \eqdef \sum_{j\in J} e_j$, and consider the algebra $e_J \Lambda e_J$.  
-Observe that $e_J \Lambda e_J$ is isomorphic to $\End{\Lambda}(\Lambda e_J)$.  This has the following consequence.
-Let $\proj_J(\Lambda)$ be the full subcategory of $\proj(\Lambda)$ whose objects are isomorphic to direct sums of
+Observe that this algebra is isomorphic to~$\End{\Lambda}(\Lambda e_J)$.
+This has the following consequence.
+Let $\proj_J(\Lambda)$ be the full subcategory of~$\proj(\Lambda)$ whose objects are isomorphic to direct sums of
 the indecomposable modules $\Lambda e_j$, with $j\in J$.
 
 \begin{lemma}
@@ -399,7 +426,7 @@ With the notations we introduced, we can now restate Theorem~\ref{thm:mainDissec
 For any reference dissection~$\dissection_\circ$, the $\dissection_\circ$-accordion complex is isomorphic to the $2$-term silting complex of the quiver~$\overline{\quiver}(\dissection_\circ)$.
 \end{theorem}
 
-One possible approach to Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex} would be to provide an explicit bijective map between $\dissection_\circ$-accordion diagonals and $2$-term silting objects for~$\overline{\quiver}(\dissection_\circ)$.
+One possible approach to Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex} would be to provide an explicit bijective map between~$\dissection_\circ$-accordion diagonals and $2$-term silting objects for~$\overline{\quiver}(\dissection_\circ)$.
 Such a map is easy to guess using \mbox{$\b{g}$-vectors}, but the proof that it is actually a bijection and that it preserves compatibility is intricate.
 This approach was developed in the more general context of non-kissing complexes of gentle quivers with relations in~\cite{PaluPilaudPlamondon}.
 In this note, we use an alternative simpler strategy to obtain Theorem~\ref{thm:bijectionAccordionComplexSiltingComplex} understanding accordion complexes as certain subcomplexes of the associahedron.
@@ -462,13 +489,12 @@ However, their approach deals with $\b{c}$-vectors and simple-minded collections
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section*{Acknowledgements}
-
+\begin{acknowledgements}
 We are grateful to F.~Chapoton for pointing out to us the isomorphism between the two graphs of \fref{fig:accordiohedron} which gave us the motivation for the present note.
-
+\end{acknowledgements}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\bibliographystyle{alpha}
+\bibliographystyle{amsalpha}
 \bibliography{coordSections}
 \label{sec:biblio}
 
